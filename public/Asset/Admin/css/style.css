@@ -1,0 +1,147 @@
+/************************************************************************************************************
+************************************ Font Family Links ******************************************************
+************************************************************************************************************/
+
+
+@font-face {
+    font-family: Blackish;
+    src: url(/public/Asset/Admin/fonts/Montserrat-Black.woff);
+}
+
+@font-face {
+    font-family: BlackItalic;
+    src: url(/public/Asset/Admin/fonts/Montserrat-BlackItalic.woff);
+}
+
+@font-face {
+    font-family: Boldish;
+    src: url(/public/Asset/Admin/fonts/Montserrat-Bold.woff);
+}
+
+
+@font-face {
+    font-family: BoldItalic;
+    src: url(/public/Asset/Admin/fonts/Montserrat-BoldItalic.woff);
+}
+
+
+@font-face {
+    font-family: ExtraBold;
+    src: url(/public/Asset/Admin/fonts/Montserrat-ExtraBold.woff);
+}
+
+
+@font-face {
+    font-family: ExtraBoldItalic;
+    src: url(/public/Asset/Admin/fonts/Montserrat-ExtraBoldItalic.woff);
+}
+
+
+
+@font-face {
+    font-family: MontMedium;
+    src: url(/public/Asset/Admin/fonts/Montserrat-Medium.woff);
+}
+
+
+
+@font-face {
+    font-family: MontMediumItalic;
+    src: url(/public/Asset/Admin/fonts/Montserrat-MediumItalic.woff);
+}
+
+
+@font-face {
+    font-family: MontRegular;
+    src: url(/public/Asset/Admin/fonts/Montserrat-Regular.woff);
+}
+
+
+
+@font-face {
+    font-family: MontSemiBold;
+    src: url(/public/Asset/Admin/fonts/Montserrat-SemiBold.woff);
+}
+
+
+
+@font-face {
+    font-family: MontSemiBoldItalic;
+    src: url(/public/Asset/Admin/fonts/Montserrat-SemiBoldItalic.woff);
+}
+
+
+
+@font-face {
+    font-family: MontThin;
+    src: url(/public/Asset/Admin/fonts/Montserrat-Thin.woff);
+}
+
+
+
+@font-face {
+    font-family: MontThinItalic;
+    src: url(/public/Asset/Admin/fonts/Montserrat-ThinItalic.woff);
+}
+
+
+/************************************************************************************************************
+************************************ Font Family Links ******************************************************
+************************************************************************************************************/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+
+/************************************************************************************************************
+************************************ Header CSS ***********************************************************
+************************************************************************************************************/
+
+
+
+/************************************************************************************************************
+************************************ Header CSS ***********************************************************
+************************************************************************************************************/
+
+
+.header{
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 10vh;
+    background-color: green;
+
+}
+
+/************************************************************************************************************
+************************************ Side Bar CSS ***********************************************************
+************************************************************************************************************/
+
+
+.sidebar{
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20vw;
+    height: 100vh;
+    background-color: black;
+
+}
+
+
+
+
+/************************************************************************************************************
+************************************ Side Bar CSS ***********************************************************
+************************************************************************************************************/
