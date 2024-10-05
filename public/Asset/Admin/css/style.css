@@ -76,6 +76,7 @@
     --sub: #546dfe;
     --icon: #a3b1fe;
     --text: #1a2638;
+    --purple-sub: #d67cf75d;
 }
 * {
     margin: 0;
@@ -104,11 +105,14 @@ body {
     height: 100vh;
     z-index: 2;
     background-color: #fff;
-    overflow-y: hidden; 
+    overflow-y: hidden;
+    transition: 0.5s ease;
 }
-
+.sidebar.active{
+    left: -21vw;
+}
 .sidebar:hover {
-    overflow-y: scroll; 
+    overflow-y: scroll;
 }
 
 .sidebar::-webkit-scrollbar {
@@ -116,14 +120,13 @@ body {
 }
 
 .sidebar::-webkit-scrollbar-thumb {
-    background-color: var(--main); 
-    border-radius: 10px; 
+    background-color: var(--main);
+    border-radius: 10px;
 }
 
 .sidebar::-webkit-scrollbar-thumb:hover {
-    background-color: var(--main); 
+    background-color: var(--main);
 }
-
 
 .logo-container {
     width: 100%;
@@ -131,8 +134,10 @@ body {
     display: flex;
     gap: 10px;
     align-items: center;
+    text-decoration: none;
     justify-content: center;
     border-bottom: 1px solid #f5f2f2cc;
+    cursor: pointer;
 }
 
 .logo-container img {
@@ -144,6 +149,7 @@ body {
     text-align: center;
     margin: 0;
     font-weight: 500;
+    color: #1a2638;
 }
 
 .link-container {
@@ -155,7 +161,7 @@ body {
     padding-right: 20px;
 }
 
-.link-title{
+.link-title {
     font-family: MontRegular;
     color: var(--text);
     font-size: 12px;
@@ -163,7 +169,7 @@ body {
 }
 .link-contain {
     width: 100%;
-  
+
     list-style: none;
 }
 
@@ -174,15 +180,15 @@ body {
     align-items: center;
     font-family: MontRegular;
 }
-.link-contain a .link-icon{
+.link-contain a .link-icon {
     font-size: 18px;
     color: var(--icon);
 }
-.link-contain a .link-icon svg{
- fill: #546dfe;
+.link-contain a .link-icon svg {
+    fill: #546dfe;
 }
 .link-contain a .link-text {
-    font-size: 15x;
+    font-size: 15px;
     color: var(--text);
     margin: 0;
     transition: 0.5s;
@@ -201,7 +207,7 @@ body {
     color: var(--icon);
     transition: 0.5s;
 }
-.drop-icon.active{
+.drop-icon.active {
     transform: rotate(180deg);
 }
 .sub-link-container {
@@ -212,9 +218,9 @@ body {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    transition: max-height 0.5s ease; 
-    max-height: 0; 
-    overflow: hidden; 
+    transition: max-height 0.5s ease;
+    max-height: 0;
+    overflow: hidden;
 }
 
 .sub-link-container.active {
@@ -242,6 +248,45 @@ body {
     content: "-";
     padding-right: 10px;
 }
+
+@media screen and (max-width:1100px){
+
+    .logo-container img {
+        width: 20px;
+    }
+    .logo-container h2 {
+     
+        font-size: 18px;
+       
+    }
+
+    .link-container {
+       
+        padding-top: 30px;
+        gap: 22px;
+        padding-right: 20px;
+    }
+
+    .link-contain a .link-icon {
+        font-size: 15px;
+       
+    }
+    .link-contain a .link-text {
+        font-size: 13px;
+        
+    }
+
+    .sub-link-contian a {
+        font-size: 12px;
+        
+    }
+}
+
+@media screen and (max-width:850px){
+    .sidebar{
+        left: -21vw;
+    }
+}
 /************************************************************************************************************
 ************************************ Side Bar CSS ***********************************************************
 ************************************************************************************************************/
@@ -255,8 +300,12 @@ body {
     left: 21vw;
     width: calc(100vw - 21vw);
     background-color: var(--main);
+    transition: 0.5s ease;
 }
-
+.main-content.active{
+    left: 0;
+    width: 100vw;
+}
 /************************************************************************************************************
 ************************************ Header CSS ***********************************************************
 ************************************************************************************************************/
@@ -269,17 +318,32 @@ body {
     position: fixed;
     top: 0;
     left: 21vw;
-    width: 100%;
+    width: calc(100vw - 21vw);
     height: 10vh;
     background-color: var(--main);
     padding: 0px 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    transition: 0.5s ease;
+
+}
+.responsive-menu-bar{
+    display: none;
+    gap: 20px;
+    align-items: center;
+    
+}
+.responsive-menu-bar img{
+    width: 35px;
+
+}
+.header.active{
+    left: 0;
+    width: 100vw;
 }
 .menu-bar {
     cursor: pointer;
-   
 }
 
 .menu-icon {
@@ -294,32 +358,188 @@ body {
 .bar {
     width: 30px;
     height: 4px;
-    background-color: #8D9EB5;
+    background-color: #8d9eb5;
     border-radius: 2px;
     transition: all 0.3s ease;
 }
-.bar:nth-child(2){
+.bar:nth-child(2) {
     width: 20px;
 }
 
 .menu-icon.active .bar:nth-child(1) {
-    transform: rotate(45deg);  
-    transform-origin: top left;  
-    position: relative;          
-    left: 4px;                   
+    transform: rotate(45deg);
+    transform-origin: top left;
+    position: relative;
+    left: 4px;
 }
 
 .menu-icon.active .bar:nth-child(2) {
-    opacity: 0; 
+    opacity: 0;
 }
 
 .menu-icon.active .bar:nth-child(3) {
-    transform: rotate(-45deg);  
-    transform-origin: bottom left; 
-    position: relative;          
-    left: 4px;                   
+    transform: rotate(-45deg);
+    transform-origin: bottom left;
+    position: relative;
+    left: 4px;
+}
+.header-second {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+}
+.notifications {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.5s;
+    animation: ringBell 2s infinite;
+}
+@keyframes ringBell {
+    0% {
+        transform: rotate(0deg);
+    }
+    10% {
+        transform: rotate(15deg);
+    }
+    20% {
+        transform: rotate(-10deg);
+    }
+    30% {
+        transform: rotate(5deg);
+    }
+    40% {
+        transform: rotate(-5deg);
+    }
+    50% {
+        transform: rotate(2deg);
+    }
+    60% {
+        transform: rotate(-2deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+.notifications:hover {
+    background-color: #546efe27;
+}
+.notifications i {
+    color: var(--icon);
+}
+.notifications .dot {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: var(--purple-sub);
+    animation: shadowPulse 4s infinite;
+}
+@keyframes shadowPulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(108, 117, 125, 0.4);
+    }
+    70% {
+        box-shadow: 0 0 15px 15px rgba(108, 117, 125, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(108, 117, 125, 0);
+    }
+}
+.header-profile {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    cursor: pointer;
+}
+.header-profile .img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.header-profile .img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.header-profile h3 {
+    font-family: MontSemibold;
+    font-size: 15px;
+    margin: 0;
+    color: var(--text);
+    opacity: 0.5;
+}
+.profile-dropdown {
+    position: absolute;
+    bottom: -160px;
+    background-color: #fff;
+    margin: 0;
+    padding-left: 0;
+    border-radius: 5px;
+    display: none;
+    transition: 0.5s;
+}
+.profile-dropdown.active{
+    display: block;
+}
+.profile-dropdown .drop-item {
+    list-style: none;
+    width: 150px;
+    padding: 10px 0px;
+    padding-left: 20px;
+    transition: 0.2s;
+    border-bottom: 1px solid #f5f2f2cc;
+}
+.profile-dropdown .drop-item:hover{
+    background-color: #546efe27;
+}
+.profile-dropdown .drop-item a {
+    display: flex;
+    gap: 10px;
+    text-decoration: none;
+    color: var(--text);
+    font-family: MontRegular;
+}
+.profile-dropdown .drop-item a .profile-icon {
+    color: var(--i);
+    font-size: 16px;
+}
+.profile-dropdown .drop-item a .profile-text {
+    font-size: 15px;
+    transition: 0.5s;
+}
+.profile-dropdown .drop-item a .profile-text:hover{
+    color: var(--text);
 }
 
+
+@media screen and (max-width:850px){
+    .main-content{
+        left: 0;
+        width: 100vw;
+    }
+    .header{
+        left: 0;
+        width: 100vw;
+    }
+    .responsive-menu-bar{
+        display: flex;
+    }
+    #menuBar{
+        display: none;
+    }
+}
 /************************************************************************************************************
 ************************************ Main Content CSS ***********************************************************
 ************************************************************************************************************/

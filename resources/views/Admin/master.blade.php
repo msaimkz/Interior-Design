@@ -41,10 +41,10 @@
 
 
         <div class="sidebar">
-            <div class="logo-container">
+            <a href="#" class="logo-container">
                 <img src="{{ asset('Asset/Admin/img/logo1.png') }}" alt="logo">
                 <h2>Decor Vista</h2>
-            </div>
+            </a>
 
             <ul class="link-container">
                 <span class="link-title">Main</span>
@@ -169,10 +169,25 @@
                 </li>
                 <span class="link-title">Users</span>
                 <li class="link-contain">
-                    <a href="#">
-                        <span class="link-icon"><i class="fa-solid fa-user-group"></i></i></span>
-                        <span class="link-text">Designer</span>
+                    <a href="javascript:void(0)" class="dropdownlink">
+                        <span class="link-icon"><i class="fa-solid fa-user-group"></i></span>
+                        <div class="sub-link">
+                            <span class="link-text">Designer</span>
+                            <span class="sub-link-icon drop-icon"><i class="fa-solid fa-angle-down"></i></span>
+                        </div>
+
+
                     </a>
+                    <ul class="sub-link-container">
+                        <li class="sub-link-contian">
+
+                            <a href="">Designer</a>
+                        </li>
+                        <li class="sub-link-contian">
+                            <a href="">Designer Request</a>
+                        </li>
+
+                    </ul>
                 </li>
                 <li class="link-contain">
                     <a href="javascript:void(0)" class="dropdownlink">
@@ -243,12 +258,59 @@
             {{-- Header   --}}
 
             <div class="header">
+                <div class="responsive-menu-bar">
+                    <img src="{{ asset('Asset/Admin/img/logo1.png') }}" alt="">
+                    <div class="menu-bar" id="ResmenuBar">
+                        <div class="menu-icon">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                        </div>
+                    </div>
+                </div>
                 <div class="menu-bar" id="menuBar">
                     <div class="menu-icon" id="menuIcon">
                         <span class="bar"></span>
                         <span class="bar"></span>
                         <span class="bar"></span>
                     </div>
+                </div>
+
+                <div class="header-second">
+                    <div class="notifications">
+                        <i class="fa-solid fa-bell"></i>
+                        <div class="dot"></div>
+                    </div>
+                    <div class="header-profile">
+                        <div class="img">
+                            <img src="{{ asset('Asset/Admin/img/men-avatar.jpg') }}" alt="">
+
+                        </div>
+                        <h3>M. Saim</h3>
+                    </div>
+                    <ul class="profile-dropdown">
+                        <li class="drop-item" style="--i: #667CFE;">
+                            <a href="">
+                                <span class="profile-icon"><i class="fa-solid fa-user"></i></span>
+                                <span class="profile-text">Profile</span>
+                            </a>
+                        </li>
+                        <li class="drop-item" style="--i: #D77CF7;">
+                            <a href="">
+                                <span class="profile-icon"><i class="fa-solid fa-envelope"></i></span>
+                                <span class="profile-text">Inbox</span>
+                            </a>
+                        </li>
+                        <li class="drop-item" style="--i: #F5BB71;">
+                            <form action="">
+                                <a href="">
+                                    <span class="profile-icon"><i class="fa-solid fa-right-from-bracket"></i></span>
+                                    <span class="profile-text">Logout</span>
+                                </a>
+                            </form>
+
+                        </li>
+                    </ul>
                 </div>
             </div>
 
