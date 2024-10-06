@@ -315,6 +315,8 @@
             </div>
 
             {{-- Header   --}}
+
+            @yield('content')
         </div>
     </div>
 
@@ -330,10 +332,22 @@
 
     {{-- Bootstrap CDN Script  --}}
 
+    {{-- Apex Chart CDN Script  --}}
+
+
+  
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+    {{-- Apex Chart CDN Script  --}}
+
     {{-- Custom  CDN  Script --}}
 
     <script src="{{ asset('Asset/Admin/js/script.js') }}"></script>
     {{-- Custom  CDN  Script --}}
+
+
+    @yield('script')
 
 </body>
 
