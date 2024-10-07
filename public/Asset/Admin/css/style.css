@@ -530,7 +530,7 @@ body {
 .content {
     width: 100%;
     background-color: transparent;
-    padding: 50px 20px;
+    padding: 50px 30px;
     overflow-x: hidden;
 }
 .title h1 {
@@ -618,10 +618,9 @@ body {
     padding-top: 30px;
     display: flex;
     gap: 20px;
-  
 }
 .sale-chart {
-    width: 64%;
+    width: 62%;
     box-sizing: content-box;
     background-color: #fff;
     border-radius: 10px;
@@ -633,13 +632,13 @@ body {
     justify-content: space-between;
     align-items: center;
 }
-.sale-chart-body{
+.sale-chart-body {
     width: 100%;
     height: 400px;
     position: relative;
     top: 0;
 }
-.sale-chart-body canvas{
+.sale-chart-body canvas {
     width: 100% !important;
     height: 100% !important;
 }
@@ -668,7 +667,7 @@ body {
 }
 
 .city-chart {
-    width: 36%;
+    width: 34%;
     background-color: #fff;
     border-radius: 10px;
 }
@@ -683,26 +682,27 @@ body {
     margin-top: 10px;
     color: var(--text);
 }
-.city-chart-body{
+.city-chart-body {
     width: 100%;
+    height: 400px;
 }
-.city-chart-body canvas{
+.city-chart-body canvas {
     width: 100% !important;
     height: 100% !important;
 }
 
-.table-container{
+.table-container {
     width: 100%;
     padding-top: 30px;
     display: flex;
     gap: 20px;
 }
-.payment-table{
-    width: 55%;
+.payment-table {
+    width: 62%;
     background-color: #fff;
     border-radius: 10px;
 }
-.payment-table-header{
+.payment-table-header {
     padding: 20px;
     border-bottom: 1px solid #f5f2f2;
     display: flex;
@@ -716,72 +716,74 @@ body {
     margin-top: 10px;
     color: var(--text);
 }
-.payment-table-body{
+.payment-table-body {
     width: 100%;
 }
-.payment-table-body table{
+.payment-table-body table {
     width: 100%;
     overflow-x: scroll;
-   
 }
-.payment-table-body table thead{
+.payment-table-body table thead {
     border-bottom: 1px solid #f5f2f2;
-
 }
-.payment-table-body table thead th{
+.payment-table-body table thead th {
     padding: 15px 20px;
     font-family: MontMedium;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 550;
     color: var(--text);
+    white-space: nowrap;
+
 }
-.payment-table-body table tbody td{
+.payment-table-body table tbody td {
     padding: 15px 20px;
     font-family: MontMedium;
     font-size: 15px;
     color: var(--text);
+   
 }
- .payment-amount{
+.payment-amount {
     display: flex;
     align-items: center;
     gap: 10px;
 }
-.payment-amount .amount-icon{
-    padding: 7px 10px;
+.payment-amount .amount-icon {
+    padding: 7px 8px;
     background-color: rgba(84, 110, 255, 0.411);
     border-radius: 5px;
     color: #546dfe;
     font-size: 14px;
 }
-.payment-amount h5{
+.payment-amount h5 {
     font-family: MontMedium;
+    white-space: nowrap;
     font-size: 14px;
     font-weight: 500;
     color: #1a2638;
     margin-bottom: 0;
 }
-.payment-amount span{
+.payment-amount span {
     font-family: MontMedium;
     font-size: 12px;
     color: var(--text);
 }
-.price-text h5{
+.price-text h5 {
     font-family: MontMedium;
+    white-space: nowrap;
     font-size: 14px;
     font-weight: 500;
-    color:#1a2638;
+    color: #1a2638;
     margin-bottom: 0;
 }
-.price-text span{
+.price-text span {
     font-family: MontMedium;
     font-size: 10px;
     color: var(--text);
 }
-.payment-table-body .order-status{
+.payment-table-body .order-status {
     color: var(--i);
     font-family: MontMedium;
     font-size: 15px;
-    
 }
 /************************************************************************************************************
 ****************************.******** Content CSS ***********************************************************
