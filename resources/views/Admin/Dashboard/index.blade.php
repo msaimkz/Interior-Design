@@ -116,7 +116,7 @@
                     </div>
                 </div>
                 <div class="sale-chart-body">
-                    <canvas id="myChart"></canvas>
+                    <canvas id="SaleChart"></canvas>
                 </div>
             </div>
             <div class="city-chart">
@@ -124,7 +124,57 @@
                     <h2>Top Selling Cities</h2>
                 </div>
                 <div class="city-chart-body">
-                    <div id="city-radar"></div>
+                    <canvas id="CityChart"></canvas>
+
+                </div>
+            </div>
+        </div>
+        <div class="table-container">
+            <div class="payment-table">
+                <div class="payment-table-header">
+                    <h2>Recent Payment Status</h2>
+                </div>
+                <div class="payment-table-body">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Order Id</th>
+                                <th>Payment Mode</th>
+                                <th>Amount</th>
+                                <th>Order Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>01234</td>
+                                <td>
+                                    <div class="payment-amount">
+                                        <div class="amount-icon">
+                                            <i class="fa-solid fa-dollar-sign"></i>
+                                        </div>
+                                        <div class="amount-text">
+                                            <h5> Cash On Delivery</h5>
+                                             <span>Pay On Delivery</span>
+                                        </div>
+                                    </div>
+                                    
+                                </td>
+                                <td>
+                                    <div class="price-text">
+                                        <h5>Rs: 10,500</h5>
+                                        <span>Nov 23, 2023</span>
+                                    </div>
+                                    
+                                </td>
+                                <td>
+                                    <span style="--i:#0cd7b1 ;" class="order-status">
+                                        Delivered
+                                    </span>
+                                    
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
@@ -132,73 +182,5 @@
     </div>
 @endsection
 @section('script')
-    <script>
-        function SaleChart() {
-            const ctx = document.getElementById('myChart');
-
-            new Chart(ctx, {
-                type: 'line',
-                data: {
-                    labels: ['January', 'February', 'March', 'April', 'May', 'June'],
-                    datasets: [{
-                            label: 'Profit',
-                            data: [10, 15, 8, 12, 18, 20],
-                            borderColor: 'rgba(75, 192, 192, 1)',
-                            borderWidth: 1,
-                            fill: true,
-                            lineTension: 0.3,
-                        },
-                        {
-                            label: 'Revenue',
-                            data: [20, 25, 18, 30, 28, 35],
-                            borderColor: 'rgba(255, 99, 132, 1)',
-                            borderWidth: 1,
-                            fill: true,
-                            lineTension: 0.3,
-                        },
-                        {
-                            label: 'Sales',
-                            data: [15, 22, 20, 25, 30, 35],
-                            borderColor: 'rgba(255, 206, 86, 1)',
-                            borderWidth: 1,
-                            fill: true,
-                            lineTension: 0.3,
-                        }
-                    ]
-                },
-                options: {
-                    responsive: true,
-                    plugins: {
-                        tooltip: {
-                            enabled: true,
-                            mode: 'index',
-                            intersect: false,
-                            callbacks: {
-                                label: function(tooltipItem) {
-                                    
-                                    const label = tooltipItem.dataset.label || '';
-                                    const value = tooltipItem.raw;
-
-                                   
-                                    if (label === 'Profit' || label === 'Revenue') {
-                                        return `${label}: $${value.toFixed(2)}`; // Formatting as currency
-                                    }
-
-                                    // Return sales as normal
-                                    return `${label}: ${value}`;
-                                }
-                            }
-                        }
-                    },
-                    scales: {
-                        y: {
-                            beginAtZero: true
-                        }
-                    }
-                }
-            });
-        }
-
-        SaleChart()
-    </script>
+<script src="{{ asset('Asset/Admin/js/dashboard.js') }}"></script>
 @endsection
