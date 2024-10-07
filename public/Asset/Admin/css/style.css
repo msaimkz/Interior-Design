@@ -622,7 +622,6 @@ body {
 }
 .sale-chart {
     width: 64%;
-    height: 400px;
     box-sizing: content-box;
     background-color: #fff;
     border-radius: 10px;
@@ -636,6 +635,7 @@ body {
 }
 .sale-chart-body{
     width: 100%;
+    height: 400px;
     position: relative;
     top: 0;
 }
