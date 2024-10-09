@@ -36,6 +36,10 @@
 
     <div class="main">
 
+    <div class="blur-background">
+
+    </div>
+
 
         {{-- SideBar --}}
 
@@ -61,10 +65,10 @@
                     <ul class="sub-link-container">
                         <li class="sub-link-contian">
 
-                            <a href="">Sales Overview</a>
+                            <a href="{{  route('Admin.dashboard.index') }}">Sales Overview</a>
                         </li>
                         <li class="sub-link-contian">
-                            <a href="">User Statistics</a>
+                            <a href="{{ route('Admin.dashboard.user')  }}">User Statistics</a>
                         </li>
                         <li class="sub-link-contian">
                             <a href="">Sales Analytics</a>
@@ -255,6 +259,7 @@
         {{-- SideBar --}}
 
         <div class="main-content">
+
             {{-- Header   --}}
 
             <div class="header">
@@ -317,6 +322,17 @@
             {{-- Header   --}}
 
             @yield('content')
+
+
+          
+            {{-- Footer  --}}
+
+            <footer>
+                <p>Copyright &copy; <b>DecorVista</b> All Rights Reserved</p>
+            </footer>
+
+            {{-- Footer  --}}
+
         </div>
     </div>
 

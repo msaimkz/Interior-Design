@@ -95,6 +95,19 @@ body {
     position: relative;
 }
 
+
+
+.blur-background{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #00000077;
+    z-index: 4;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+}
+
 /************************************************************************************************************
 ************************************ Side Bar CSS ***********************************************************
 ************************************************************************************************************/
@@ -109,9 +122,11 @@ body {
     overflow-y: hidden;
     transition: 0.5s ease;
 }
+
 .sidebar.active {
     left: -21vw;
 }
+
 .sidebar:hover {
     overflow-y: scroll;
 }
@@ -250,7 +265,7 @@ body {
     padding-right: 10px;
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1150px) {
     .logo-container img {
         width: 20px;
     }
@@ -274,16 +289,44 @@ body {
     .sub-link-contian a {
         font-size: 12px;
     }
+    
+    
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 990px) {
     .sidebar {
         left: -21vw;
+       
     }
+    .sidebar.Res-active{
+        width: 35vw;
+        position: fixed;
+        left: 0;
+        z-index: 5;
+    }
+    .blur-background.active{
+        display: block;
+    }
+    
+}
+@media screen and (max-width: 550px){
+    .sidebar.Res-active{
+        width: 60vw;
+        position: fixed;
+        left: 0;
+        z-index: 5;
+    }
+    .blur-background.active{
+        display: block;
+    }
+
+    
+    
 }
 /************************************************************************************************************
 ************************************ Side Bar CSS ***********************************************************
 ************************************************************************************************************/
+
 
 /************************************************************************************************************
 ************************************ Main Content CSS ***********************************************************
@@ -505,7 +548,8 @@ body {
     color: var(--text);
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 990px) {
+
     .main-content {
         left: 0;
         width: 100vw;
@@ -517,22 +561,79 @@ body {
     #menuBar {
         display: none;
     }
+
+   
 }
+
+@media screen and (max-width: 550px) {
+
+    .responsive-menu-bar img {
+        width: 30px;
+    }
+    .bar {
+        width: 25px;
+       
+    }
+    .bar:nth-child(2) {
+        width: 18px;
+    }
+}
+
+
 
 /************************************************************************************************************
 ************************************ Header CSS ***********************************************************
 ************************************************************************************************************/
 
 /************************************************************************************************************
+************************************ footer CSS ***********************************************************
+************************************************************************************************************/
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   background-color: #fff;
+   
+}
+footer p {
+    margin-bottom: 0;
+    font-family: MontMedium;
+    font-size: 16px;
+    color: var(--text);
+}
+/************************************************************************************************************
+************************************ footer CSS ***********************************************************
+************************************************************************************************************/
+
+/************************************************************************************************************
 ************************************ Content CSS ***********************************************************
 ************************************************************************************************************/
 
+
+
+
+
 .content {
     width: 100%;
+    min-height: calc(100vh - 10vh);
     background-color: transparent;
     padding: 50px 30px;
+    padding-top: 0px;
     overflow-x: hidden;
+    margin-bottom: 40px;
 }
+
+/************************************************************************************************************
+************************************ Sale Overview Page CSS ***********************************************************
+************************************************************************************************************/
+
+
 .title h1 {
     font-family: MontSemibold;
     font-size: 21px;
@@ -662,7 +763,6 @@ body {
     font-family: MontRegular;
     font-size: 15px;
     color: var(--text);
-
     cursor: pointer;
 }
 
@@ -694,11 +794,9 @@ body {
 .table-container {
     width: 100%;
     padding-top: 30px;
-    display: flex;
-    gap: 20px;
 }
 .payment-table {
-    width: 62%;
+    width: 98%;
     background-color: #fff;
     border-radius: 10px;
 }
@@ -733,14 +831,16 @@ body {
     font-weight: 550;
     color: var(--text);
     white-space: nowrap;
-
+}
+.payment-table-body table tbody tr {
+    border-bottom: 1px solid #f5f2f2;
 }
 .payment-table-body table tbody td {
     padding: 15px 20px;
     font-family: MontMedium;
     font-size: 15px;
     color: var(--text);
-   
+    cursor: default;
 }
 .payment-amount {
     display: flex;
@@ -757,7 +857,7 @@ body {
 .payment-amount h5 {
     font-family: MontMedium;
     white-space: nowrap;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
     color: #1a2638;
     margin-bottom: 0;
@@ -770,7 +870,7 @@ body {
 .price-text h5 {
     font-family: MontMedium;
     white-space: nowrap;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
     color: #1a2638;
     margin-bottom: 0;
@@ -785,6 +885,199 @@ body {
     font-family: MontMedium;
     font-size: 15px;
 }
+
+.order-table {
+    width: 98%;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+.order-table-header {
+    padding: 20px;
+    border-bottom: 1px solid #f5f2f2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.order-table-header h2 {
+    font-family: MontMedium;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 10px;
+    color: var(--text);
+}
+.order-table-body {
+    width: 100%;
+}
+.order-table-body table {
+    width: 100%;
+    overflow-x: scroll;
+}
+.order-table-body table thead {
+    border-bottom: 1px solid #f5f2f2;
+}
+.order-table-body table thead th {
+    padding: 15px 20px;
+    font-family: MontMedium;
+    font-size: 14px;
+    font-weight: 550;
+    color: var(--text);
+    white-space: nowrap;
+}
+.order-table-body table tbody tr {
+    border-bottom: 1px solid #f5f2f2;
+}
+.order-table-body table tbody td {
+    padding: 15px 20px;
+    font-family: MontMedium;
+    font-size: 15px;
+    color: var(--text);
+    cursor: default;
+}
+.order-customer h5 {
+    font-family: MontSemiBold;
+    white-space: nowrap;
+    font-size: 17px;
+    color: #1a2638;
+    margin-bottom: 0;
+}
+.order-customer span {
+    font-family: MontMedium;
+    font-size: 12px;
+    color: var(--text);
+}
+.order-status-badge {
+    display: inline-block;
+    padding: 5px 12px;
+    border-radius: 5px;
+    font-family: MontMedium;
+    font-size: 12px;
+    background-color: rgba(var(--i), 0.240);
+    color: rgb(var(--i));
+}
+
+
+@media screen and (max-width: 1150px ) {
+    .dashboard-card-container {
+        display: flex;
+        flex-wrap: wrap;  
+    }
+    .dashboard-card {
+        width: 47%;
+    }
+    .chart-container {
+        display: flex;
+        flex-direction: column;
+     
+    }
+    .sale-chart{
+        width: 98%;
+    }
+    .city-chart{
+        width: 98%;
+    }
+    .city-chart-body {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+        
+    }
+    .city-chart-body canvas {
+        width: 500px !important;
+        height: 100% !important;
+    }
+
+}
+
+@media screen and (max-width: 550px) {
+
+    .dashboard-card {
+        width: 97%;
+    }
+
+    .sale-chart{
+        width: 100%;
+    }
+
+
+    .payment-table-body{
+        overflow-x: scroll;
+    }
+    .order-table-body{
+        overflow-x: scroll;
+    }
+    
+}
+
+@media screen and (max-width: 450px) {
+    .title h1 {
+        font-size: 18px;
+    }
+
+    .title span {
+      font-size: 14px;
+    }
+
+    .dashboard-card-inner .inner-text h2 {
+        font-size: 20px;
+    }
+
+    .dashboard-card-inner .inner-text span {
+       font-size: 13px;
+    }
+
+    .sale-chart-header h2, .city-chart-header h2 {
+        font-size: 18px;
+    }
+
+    .payment-table-header h2 , .order-table-header h2 {
+        font-size: 18px;
+    }
+
+    .payment-amount h5  {
+        font-size: 14px;
+    }
+    .payment-amount span  {
+        font-size: 10px;
+    }
+
+    .order-customer h5 {
+
+        font-size: 15px;
+    }
+    .order-customer span {
+
+        font-size: 10px;
+    }
+
+    .order-table-body table tbody td{
+        font-size: 13px;
+        white-space: nowrap;
+    }
+}
+
+
+/************************************************************************************************************
+************************************ Sale Overview Page CSS *************************************************
+************************************************************************************************************/
+
+
+
+/************************************************************************************************************
+************************************ User Analytics Page CSS ************************************************
+************************************************************************************************************/
+
+
+
+
+/************************************************************************************************************
+************************************ User Analytics Page CSS ************************************************
+************************************************************************************************************/
+
+
+
 /************************************************************************************************************
 ****************************.******** Content CSS ***********************************************************
 ************************************************************************************************************/

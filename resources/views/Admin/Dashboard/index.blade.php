@@ -125,7 +125,6 @@
             </div>
             <div class="city-chart-body">
                 <canvas id="CityChart"></canvas>
-
             </div>
         </div>
     </div>
@@ -173,6 +172,81 @@
 
                             </td>
                         </tr>
+                        <tr>
+                            <td>01234</td>
+                            <td>
+                                <div class="payment-amount">
+                                    <div class="amount-icon">
+                                        <i class="fa-solid fa-dollar-sign"></i>
+                                    </div>
+                                    <div class="amount-text">
+                                        <h5> Cash On Delivery</h5>
+                                        <span>Pay On Delivery</span>
+                                    </div>
+                                </div>
+
+                            </td>
+                            <td>
+                                <div class="price-text">
+                                    <h5>Rs: 10,500</h5>
+                                    <span>Nov 23, 2023</span>
+                                </div>
+
+                            </td>
+                            <td>
+                                <span style="--i:#0cd7b1 ;" class="order-status">
+                                    Delivered
+                                </span>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="order-table">
+            <div class="order-table-header">
+                <h2>Recent Orders</h2>
+                <div class="dropdown">
+                    <span class="btn btn-primary dropdown-toggle drop-down-span" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                        aria-expanded="false">Sort By</span>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">This Week</a></li>
+                        <li><a class="dropdown-item" href="#">Last Week</a></li>
+                        <li><a class="dropdown-item" href="#">This Month</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="order-table-body">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Order ID</th>
+                            <th>Customer</th>
+                            <th>Ordered Date</th>
+                            <th>Total</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>01256</td>
+                            <td>
+                                <div class="order-customer">
+                                    <h5>Saim</h5>
+                                    <span>msaimkzmsk2008@gmail.com</span>
+                                </div>
+                            </td>
+                            <td>
+                                03 Sep 2024
+                            </td>
+                            <td>
+                                PKR 10,000
+                            </td>
+                            <td>
+                            <span class="order-status-badge" style="--i: 70, 185, 237 ;">Delivered</span>
+                            </td>
+                        </tr>
                     </tbody>
                 </table>
             </div>
@@ -183,5 +257,5 @@
 </div>
 @endsection
 @section('script')
-<script src="{{ asset('Asset/Admin/js/dashboard.js') }}"></script>
+<script src="{{ asset('Asset/Admin/js/Dashboard/sale.js') }}"></script>
 @endsection

@@ -33,7 +33,15 @@ function SaleChart() {
             ],
         },
         options: {
-            responsive: true,
+            responsive: true, 
+            maintainAspectRatio: false, 
+            scales: {
+                x: {
+                    ticks: {
+                        autoSkip: true, 
+                    }
+                }
+            },
             plugins: {
                 tooltip: {
                     enabled: true,
@@ -54,11 +62,11 @@ function SaleChart() {
                     },
                 },
             },
-           
+
             layout: {
                 padding: 20
             },
-           
+
         },
     });
 }
@@ -69,7 +77,7 @@ function CityChart() {
     new Chart(ctx, {
         type: "radar",
         data: {
-            labels: ["Mon", "Tue", "Wed","Thurs","Fri","Sat","Sun"],
+            labels: ["Mon", "Tue", "Wed", "Thurs", "Fri", "Sat", "Sun"],
             datasets: [
                 {
                     label: "Karachi",
@@ -107,7 +115,15 @@ function CityChart() {
             ],
         },
         options: {
-            responsive: true,
+            responsive: true, 
+            maintainAspectRatio: false, 
+            scales: {
+                x: {
+                    ticks: {
+                        autoSkip: true, 
+                    }
+                }
+            },
             layout: {
                 padding: 20
             },
@@ -117,12 +133,12 @@ function CityChart() {
                 },
             },
             scales: {
-                r: { 
+                r: {
                     ticks: {
                         min: 0,
-                        max: 100, 
+                        max: 100,
                         stepSize: 100,
-                        
+
                     },
                 },
             },
