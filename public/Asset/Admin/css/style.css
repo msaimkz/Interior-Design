@@ -1069,6 +1069,35 @@ footer p {
 ************************************ User Analytics Page CSS ************************************************
 ************************************************************************************************************/
 
+.sale-main-heading{
+    padding: 30px 0px;
+}
+.sale-main-heading h2{
+    font-family: MontMedium;
+    font-size: 20px;
+    font-weight: 550;
+    color: var(--text);
+}
+.sale-sub-heading{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+.sale-sub-heading h4{
+    font-family: MontMedium;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--text);
+    margin: 0;
+}
+.sale-sub-heading h4:nth-child(1) a{
+    color: #8E6DFD;
+    font-weight: 400;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 
 
 
