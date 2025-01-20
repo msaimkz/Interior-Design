@@ -71,7 +71,7 @@
                             <a href="{{ route('Admin.dashboard.user')  }}">User Statistics</a>
                         </li>
                         <li class="sub-link-contian">
-                            <a href="">Sales Analytics</a>
+                            <a href="{{ route('Admin.dashboard.sale') }}">Products Analytics</a>
                         </li>
                     </ul>
                 </li>
@@ -100,14 +100,14 @@
                 </li>
                 <li class="link-contain">
                     <a href="#">
-                        <span class="link-icon"><i class="fa-solid fa-diamond"></i></i></span>
+                        <span class="link-icon"><i class="fa-solid fa-diamond"></i></span>
                         <span class="link-text">Shape</span>
                     </a>
 
                 </li>
                 <li class="link-contain">
                     <a href="#">
-                        <span class="link-icon"><i class="fa-solid fa-couch"></i></i></span>
+                        <span class="link-icon"><i class="fa-solid fa-couch"></i></span>
                         <span class="link-text">Products</span>
                     </a>
 
@@ -115,7 +115,7 @@
                 <span class="link-title">Orders</span>
                 <li class="link-contain">
                     <a href="#">
-                        <span class="link-icon"><i class="fa-solid fa-truck-fast"></i></i></span>
+                        <span class="link-icon"><i class="fa-solid fa-truck-fast"></i></span>
                         <span class="link-text">Shipping</span>
                     </a>
                 </li>

@@ -16,4 +16,9 @@ class AdminController extends Controller
 
         return view('Admin.Dashboard.user');
     }
+
+    public function sale(){
+
+        return view('Admin.Dashboard.product');
+    }
 }

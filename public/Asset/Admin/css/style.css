@@ -1255,11 +1255,396 @@ footer p {
     align-items: center; 
 }
 
+.user-table-container{
+
+    width: 100%;
+    padding-top: 30px;
+}
+
+.user-table {
+    width: 98%;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.user-table-header {
+    padding: 20px;
+    border-bottom: 1px solid #f5f2f2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-table-header h2 {
+    font-family: MontMedium;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 10px;
+    color: var(--text);
+}
+
+.user-table-body {
+    width: 100%;
+}
+
+.user-table-body table {
+    width: 100%;
+    overflow-x: scroll;
+}
+
+.user-table-body table thead {
+    border-bottom: 1px solid #f5f2f2;
+}
+
+.user-table-body table thead th {
+    padding: 15px 20px;
+    font-family: MontMedium;
+    font-size: 14px;
+    font-weight: 550;
+    color: var(--text);
+    white-space: nowrap;
+}
+
+.user-table-body table tbody tr {
+    border-bottom: 1px solid #f5f2f2;
+}
+
+.user-table-body table tbody td {
+    padding: 15px 20px;
+    font-family: MontMedium;
+    font-size: 14px;
+    color: var(--text);
+    cursor: default;
+}
+
+.thumbnail{
+    width: 35px;
+    height: 35px;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 1150px) {
+    .user-dashboard-card-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .user-dashboard-card {
+        width: 47%;
+    }
+
+    .chart-container {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .sale-chart {
+        width: 98%;
+    }
+
+    .city-chart {
+        width: 98%;
+    }
+
+    .city-chart-body {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
+    }
+
+    .city-chart-body canvas {
+        width: 500px !important;
+        height: 100% !important;
+    }
+
+}
+
+@media screen and (max-width: 550px) {
+
+    .user-dashboard-card {
+        width: 97%;
+    }
+
+    .sale-chart {
+        width: 100%;
+    }
+
+
+    .user-table-body {
+        overflow-x: scroll;
+    }
+
+    
+
+}
+
+@media screen and (max-width: 450px) {
+    .title h1 {
+        font-size: 18px;
+    }
+
+    .title span {
+        font-size: 14px;
+    }
+
+   
+
+    .user-table-header  h2 {
+        font-size: 18px;
+    }
+
+    
+}
+
+
+
+
+
+
 /************************************************************************************************************
 ************************************ User Analytics Page CSS ************************************************
 ************************************************************************************************************/
 
+/************************************************************************************************************
+************************************ Product Analytics Page CSS ************************************************
+************************************************************************************************************/
 
+
+.product-dashboard-card-container {
+    width: 100%;
+    display: flex;
+    gap: 18px;
+    padding-top: 40px;
+}
+
+.product-dashboard-card {
+    width: 23%;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 20px 20px;
+}
+
+.product-card-icon {
+    width: 35px;
+    height: 35px;
+    padding: 10px;
+    border-radius: 7px;
+    background-color: rgba(var(--i));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 0 8px rgba(var(--i), 0.282);
+}
+
+.product-card-icon i {
+    color: #fff;
+    font-size: 15px;
+}
+
+.product-dashboard-card-bottom {
+    margin-top: 30px;
+}
+
+.product-dashboard-card-bottom h4 {
+    font-family: MontRegular;
+    font-size: 15px;
+    color: var(--text);
+}
+
+.product-dashboard-card-bottom h2 {
+    font-family: MontSemiBold;
+    font-size: 26px;
+    font-weight: 500;
+    margin-top: 10px;
+    color: var(--text);
+}
+
+.product-dashboard-card-bottom div{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.product-dashboard-second-container{
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    padding-top: 30px;
+}
+
+.product-table-container {
+    width: 55%;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.product-table-header {
+    padding: 20px;
+    border-bottom: 1px solid #f5f2f2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-table-header h2 {
+    font-family: MontMedium;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 10px;
+    color: var(--text);
+}
+
+.product-table-body {
+    width: 100%;
+}
+
+.product-table-body table {
+    width: 100%;
+    overflow-x: scroll;
+}
+
+.product-table-body table thead {
+    border-bottom: 1px solid #f5f2f2;
+}
+
+.product-table-body table thead th {
+    padding: 15px 20px;
+    font-family: MontMedium;
+    font-size: 14px;
+    font-weight: 550;
+    color: var(--text);
+    white-space: nowrap;
+}
+
+.product-table-body table tbody tr {
+    border-bottom: 1px solid #f5f2f2;
+}
+
+.product-table-body table tbody td {
+    padding: 15px 20px;
+    font-family: MontMedium;
+    font-size: 14px;
+    color: var(--text);
+    cursor: default;
+}
+
+
+.category-chart {
+    width: 40%;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.category-chart-header {
+    padding: 20px;
+    border-bottom: 1px solid #f5f2f2cc;
+}
+
+.category-chart-header h2 {
+    font-family: MontMedium;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 10px;
+    color: var(--text);
+}
+
+.category-chart-body {
+    width: 100%;
+    height: 400px;
+}
+
+.category-chart-body canvas {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+@media screen and (max-width: 1150px) {
+    .product-dashboard-card-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .product-dashboard-card {
+        width: 47%;
+    }
+
+   
+
+    .product-dashboard-second-container {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .product-table-container {
+        width: 98%;
+    }
+
+    .category-chart {
+        width: 98%;
+    }
+
+    .category-chart-body {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
+    }
+
+    .category-chart-body canvas {
+        width: 500px !important;
+        height: 100% !important;
+    }
+
+  
+
+}
+
+@media screen and (max-width: 550px) {
+
+    .product-dashboard-card {
+        width: 97%;
+    }
+
+   
+
+
+    .product-table-body {
+        overflow-x: scroll;
+    }
+
+    
+
+}
+
+@media screen and (max-width: 450px) {
+    .title h1 {
+        font-size: 18px;
+    }
+
+    .title span {
+        font-size: 14px;
+    }
+
+   
+
+    .product-table-header  h2 {
+        font-size: 18px;
+    }
+
+    
+}
+
+/************************************************************************************************************
+************************************ Product Analytics Page CSS ************************************************
+************************************************************************************************************/
 
 /************************************************************************************************************
 ****************************.******** Content CSS ***********************************************************

@@ -97,6 +97,90 @@
                 </div>
             </div>
         </div>
+        <div class="user-table-container">
+            <div class="user-table">
+                <div class="user-table-header">
+                    <h2>Recent Users</h2>
+                </div>
+                <div class="user-table-body">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Sno</th>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>City</th>
+                                <th>Phone</th>
+                                <th>Gender</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>01234</td>
+                                <td>
+                                    
+                                    Muhammad Saim
+                                </td>
+                                <td>msaimkzmsk2008@gmail.com</td>
+                                <td>Karachi</td>
+                                <td>03452256298</td>
+                                <td>Male</td>
+                                <td>
+                                    <a href="">
+                                        <span class="badge p-2" style="background-color: #56e6cb69; color: #0cd7b1;">View
+                                            Profile</span>
+                                    </a>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="user-table-container">
+            <div class="user-table">
+                <div class="user-table-header">
+                    <h2>Recent Designer</h2>
+                </div>
+                <div class="user-table-body">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Sno</th>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>City</th>
+                                <th>Phone</th>
+                                <th>Gender</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>01234</td>
+                                <td>
+                                   
+                                    Muhammad Saim
+                                </td>
+                                <td>msaimkzmsk2008@gmail.com</td>
+                                <td>Karachi</td>
+                                <td>03452256298</td>
+                                <td>Male</td>
+                                <td>
+                                    <a href="">
+                                        <span class="badge p-2" style="background-color: #56e6cb69; color: #0cd7b1;">View
+                                            Profile</span>
+                                    </a>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
     </div>
 @endsection
 @section('script')
