@@ -78,6 +78,7 @@
     --text: #1a2638;
     --purple-sub: #d67cf75d;
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -97,7 +98,7 @@ body {
 
 
 
-.blur-background{
+.blur-background {
     position: fixed;
     top: 0;
     left: 0;
@@ -159,6 +160,7 @@ body {
 .logo-container img {
     width: 26px;
 }
+
 .logo-container h2 {
     font-family: MontSemiBold;
     font-size: 23px;
@@ -183,6 +185,7 @@ body {
     font-size: 12px;
     text-transform: uppercase;
 }
+
 .link-contain {
     width: 100%;
 
@@ -196,36 +199,44 @@ body {
     align-items: center;
     font-family: MontRegular;
 }
+
 .link-contain a .link-icon {
     font-size: 18px;
     color: var(--icon);
 }
+
 .link-contain a .link-icon svg {
     fill: #546dfe;
 }
+
 .link-contain a .link-text {
     font-size: 15px;
     color: var(--text);
     margin: 0;
     transition: 0.5s;
 }
+
 .link-contain a .link-text:hover {
     color: var(--sub);
 }
+
 .sub-link {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
 }
+
 .sub-link-icon {
     font-size: 14px;
     color: var(--icon);
     transition: 0.5s;
 }
+
 .drop-icon.active {
     transform: rotate(180deg);
 }
+
 .sub-link-container {
     width: 100%;
     padding-top: 22px;
@@ -247,19 +258,23 @@ body {
     display: flex;
     gap: 10px;
 }
+
 .sub-link-contian span {
     font-size: 16px;
     align-items: center;
 }
+
 .sub-link-contian a {
     font-size: 14px;
     color: var(--text);
     display: inline-block;
     transition: 0.5s;
 }
+
 .sub-link-contian a:hover {
     color: var(--sub);
 }
+
 .sub-link-contian a::before {
     content: "-";
     padding-right: 10px;
@@ -269,6 +284,7 @@ body {
     .logo-container img {
         width: 20px;
     }
+
     .logo-container h2 {
         font-size: 18px;
     }
@@ -282,6 +298,7 @@ body {
     .link-contain a .link-icon {
         font-size: 15px;
     }
+
     .link-contain a .link-text {
         font-size: 13px;
     }
@@ -289,40 +306,45 @@ body {
     .sub-link-contian a {
         font-size: 12px;
     }
-    
-    
+
+
 }
 
 @media screen and (max-width: 990px) {
     .sidebar {
         left: -21vw;
-       
+
     }
-    .sidebar.Res-active{
+
+    .sidebar.Res-active {
         width: 35vw;
         position: fixed;
         left: 0;
         z-index: 5;
     }
-    .blur-background.active{
+
+    .blur-background.active {
         display: block;
     }
-    
+
 }
-@media screen and (max-width: 550px){
-    .sidebar.Res-active{
+
+@media screen and (max-width: 550px) {
+    .sidebar.Res-active {
         width: 60vw;
         position: fixed;
         left: 0;
         z-index: 5;
     }
-    .blur-background.active{
+
+    .blur-background.active {
         display: block;
     }
 
-    
-    
+
+
 }
+
 /************************************************************************************************************
 ************************************ Side Bar CSS ***********************************************************
 ************************************************************************************************************/
@@ -340,10 +362,12 @@ body {
     transition: 0.5s ease;
     overflow-x: hidden;
 }
+
 .main-content.active {
     left: 0;
     width: 100vw;
 }
+
 /************************************************************************************************************
 ************************************ Header CSS ***********************************************************
 ************************************************************************************************************/
@@ -358,11 +382,13 @@ body {
     justify-content: space-between;
     transition: 0.5s ease;
 }
+
 .responsive-menu-bar {
     display: none;
     gap: 20px;
     align-items: center;
 }
+
 .responsive-menu-bar img {
     width: 35px;
 }
@@ -387,6 +413,7 @@ body {
     border-radius: 2px;
     transition: all 0.3s ease;
 }
+
 .bar:nth-child(2) {
     width: 20px;
 }
@@ -408,12 +435,14 @@ body {
     position: relative;
     left: 4px;
 }
+
 .header-second {
     display: flex;
     align-items: center;
     gap: 20px;
     position: relative;
 }
+
 .notifications {
     width: 40px;
     height: 40px;
@@ -427,38 +456,49 @@ body {
     transition: 0.5s;
     animation: ringBell 2s infinite;
 }
+
 @keyframes ringBell {
     0% {
         transform: rotate(0deg);
     }
+
     10% {
         transform: rotate(15deg);
     }
+
     20% {
         transform: rotate(-10deg);
     }
+
     30% {
         transform: rotate(5deg);
     }
+
     40% {
         transform: rotate(-5deg);
     }
+
     50% {
         transform: rotate(2deg);
     }
+
     60% {
         transform: rotate(-2deg);
     }
+
     100% {
         transform: rotate(0deg);
     }
 }
+
 .notifications:hover {
     background-color: #546efe27;
 }
+
 .notifications i {
     color: var(--icon);
 }
+
 .notifications .dot {
     position: absolute;
     top: 8px;
@@ -469,35 +509,42 @@ body {
     background-color: var(--purple-sub);
     animation: shadowPulse 4s infinite;
 }
+
 @keyframes shadowPulse {
     0% {
         box-shadow: 0 0 0 0 rgba(108, 117, 125, 0.4);
     }
+
     70% {
         box-shadow: 0 0 15px 15px rgba(108, 117, 125, 0);
     }
+
     100% {
         box-shadow: 0 0 0 0 rgba(108, 117, 125, 0);
     }
 }
+
 .header-profile {
     display: flex;
     gap: 10px;
     align-items: center;
     cursor: pointer;
 }
+
 .header-profile .img {
     width: 35px;
     height: 35px;
     border-radius: 50%;
     overflow: hidden;
 }
+
 .header-profile .img img {
     width: 100%;
     height: 100%;
     border-radius: 50%;
     object-fit: cover;
 }
+
 .header-profile h3 {
     font-family: MontSemibold;
     font-size: 15px;
@@ -505,6 +552,7 @@ body {
     color: var(--text);
     opacity: 0.5;
 }
+
 .profile-dropdown {
     position: absolute;
     bottom: -160px;
@@ -515,9 +563,11 @@ body {
     display: none;
     transition: 0.5s;
 }
+
 .profile-dropdown.active {
     display: block;
 }
+
 .profile-dropdown .drop-item {
     list-style: none;
     width: 150px;
@@ -526,9 +576,11 @@ body {
     transition: 0.2s;
     border-bottom: 1px solid #f5f2f2cc;
 }
+
 .profile-dropdown .drop-item:hover {
     background-color: #546efe27;
 }
+
 .profile-dropdown .drop-item a {
     display: flex;
     gap: 10px;
@@ -536,14 +588,17 @@ body {
     color: var(--text);
     font-family: MontRegular;
 }
+
 .profile-dropdown .drop-item a .profile-icon {
     color: var(--i);
     font-size: 16px;
 }
+
 .profile-dropdown .drop-item a .profile-text {
     font-size: 15px;
     transition: 0.5s;
 }
+
 .profile-dropdown .drop-item a .profile-text:hover {
     color: var(--text);
 }
@@ -558,11 +613,12 @@ body {
     .responsive-menu-bar {
         display: flex;
     }
+
     #menuBar {
         display: none;
     }
 
-   
+
 }
 
 @media screen and (max-width: 550px) {
@@ -570,10 +626,12 @@ body {
     .responsive-menu-bar img {
         width: 30px;
     }
+
     .bar {
         width: 25px;
-       
+
     }
+
     .bar:nth-child(2) {
         width: 18px;
     }
@@ -598,15 +656,17 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-   background-color: #fff;
-   
+    background-color: #fff;
+
 }
+
 footer p {
     margin-bottom: 0;
     font-family: MontMedium;
     font-size: 16px;
     color: var(--text);
 }
+
 /************************************************************************************************************
 ************************************ footer CSS ***********************************************************
 ************************************************************************************************************/
@@ -639,6 +699,7 @@ footer p {
     font-size: 21px;
     margin: 0;
 }
+
 .title span {
     font-family: MontRegular;
     font-size: 16px;
@@ -651,23 +712,27 @@ footer p {
     gap: 18px;
     padding-top: 20px;
 }
+
 .dashboard-card {
     width: 23%;
     border-radius: 10px;
     background-color: #fff;
     padding: 27px 20px;
 }
+
 .dashboard-card-inner {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: start;
 }
+
 .dashboard-card-inner .inner-text span {
     font-family: MontRegular;
     font-size: 15px;
     color: var(--text);
 }
+
 .dashboard-card-inner .inner-text h2 {
     font-family: MontSemiBold;
     font-size: 26px;
@@ -683,6 +748,7 @@ footer p {
     display: flex;
     box-shadow: 0px 0px 0 8px rgba(var(--i), 0.282);
 }
+
 .dashboard-card-inner .inner-icon i {
     color: #fff;
     font-size: 15px;
@@ -694,13 +760,16 @@ footer p {
     align-items: center;
     gap: 10px;
 }
+
 .percantage-container {
     margin: 0;
     margin-top: 10px;
 }
+
 .percentage-arrow.danger {
     color: red;
 }
+
 .percentage-arrow {
     display: inline-block;
     margin-right: 7px;
@@ -708,6 +777,7 @@ footer p {
     font-family: MontRegular;
     font-size: 14px;
 }
+
 .percentage-month {
     font-family: MontRegular;
     font-size: 15px;
@@ -720,12 +790,14 @@ footer p {
     display: flex;
     gap: 20px;
 }
+
 .sale-chart {
     width: 62%;
     box-sizing: content-box;
     background-color: #fff;
     border-radius: 10px;
 }
+
 .sale-chart-header {
     padding: 20px;
     border-bottom: 1px solid #f5f2f2cc;
@@ -733,16 +805,19 @@ footer p {
     justify-content: space-between;
     align-items: center;
 }
+
 .sale-chart-body {
     width: 100%;
     height: 400px;
     position: relative;
     top: 0;
 }
+
 .sale-chart-body canvas {
     width: 100% !important;
     height: 100% !important;
 }
+
 .sale-chart-header h2 {
     font-family: MontMedium;
     font-size: 20px;
@@ -750,6 +825,7 @@ footer p {
     margin-top: 10px;
     color: var(--text);
 }
+
 .sale-chart-header .drop-down-span {
     font-family: MontRegular;
     font-size: 15px;
@@ -759,6 +835,7 @@ footer p {
     align-items: center;
     cursor: pointer;
 }
+
 .dropdown-item {
     font-family: MontRegular;
     font-size: 15px;
@@ -771,10 +848,12 @@ footer p {
     background-color: #fff;
     border-radius: 10px;
 }
+
 .city-chart-header {
     padding: 20px;
     border-bottom: 1px solid #f5f2f2cc;
 }
+
 .city-chart-header h2 {
     font-family: MontMedium;
     font-size: 20px;
@@ -782,10 +861,12 @@ footer p {
     margin-top: 10px;
     color: var(--text);
 }
+
 .city-chart-body {
     width: 100%;
     height: 400px;
 }
+
 .city-chart-body canvas {
     width: 100% !important;
     height: 100% !important;
@@ -795,11 +876,13 @@ footer p {
     width: 100%;
     padding-top: 30px;
 }
+
 .payment-table {
     width: 98%;
     background-color: #fff;
     border-radius: 10px;
 }
+
 .payment-table-header {
     padding: 20px;
     border-bottom: 1px solid #f5f2f2;
@@ -807,6 +890,7 @@ footer p {
     justify-content: space-between;
     align-items: center;
 }
+
 .payment-table-header h2 {
     font-family: MontMedium;
     font-size: 20px;
@@ -814,16 +898,20 @@ footer p {
     margin-top: 10px;
     color: var(--text);
 }
+
 .payment-table-body {
     width: 100%;
 }
+
 .payment-table-body table {
     width: 100%;
     overflow-x: scroll;
 }
+
 .payment-table-body table thead {
     border-bottom: 1px solid #f5f2f2;
 }
+
 .payment-table-body table thead th {
     padding: 15px 20px;
     font-family: MontMedium;
@@ -832,9 +920,11 @@ footer p {
     color: var(--text);
     white-space: nowrap;
 }
+
 .payment-table-body table tbody tr {
     border-bottom: 1px solid #f5f2f2;
 }
+
 .payment-table-body table tbody td {
     padding: 15px 20px;
     font-family: MontMedium;
@@ -842,11 +932,13 @@ footer p {
     color: var(--text);
     cursor: default;
 }
+
 .payment-amount {
     display: flex;
     align-items: center;
     gap: 10px;
 }
+
 .payment-amount .amount-icon {
     padding: 7px 8px;
     background-color: rgba(84, 110, 255, 0.411);
@@ -854,6 +946,7 @@ footer p {
     color: #546dfe;
     font-size: 14px;
 }
+
 .payment-amount h5 {
     font-family: MontMedium;
     white-space: nowrap;
@@ -862,11 +955,13 @@ footer p {
     color: #1a2638;
     margin-bottom: 0;
 }
+
 .payment-amount span {
     font-family: MontMedium;
     font-size: 12px;
     color: var(--text);
 }
+
 .price-text h5 {
     font-family: MontMedium;
     white-space: nowrap;
@@ -875,11 +970,13 @@ footer p {
     color: #1a2638;
     margin-bottom: 0;
 }
+
 .price-text span {
     font-family: MontMedium;
     font-size: 10px;
     color: var(--text);
 }
+
 .payment-table-body .order-status {
     color: var(--i);
     font-family: MontMedium;
@@ -892,6 +989,7 @@ footer p {
     border-radius: 10px;
     margin-top: 40px;
 }
+
 .order-table-header {
     padding: 20px;
     border-bottom: 1px solid #f5f2f2;
@@ -899,6 +997,7 @@ footer p {
     justify-content: space-between;
     align-items: center;
 }
+
 .order-table-header h2 {
     font-family: MontMedium;
     font-size: 20px;
@@ -906,16 +1005,20 @@ footer p {
     margin-top: 10px;
     color: var(--text);
 }
+
 .order-table-body {
     width: 100%;
 }
+
 .order-table-body table {
     width: 100%;
     overflow-x: scroll;
 }
+
 .order-table-body table thead {
     border-bottom: 1px solid #f5f2f2;
 }
+
 .order-table-body table thead th {
     padding: 15px 20px;
     font-family: MontMedium;
@@ -924,9 +1027,11 @@ footer p {
     color: var(--text);
     white-space: nowrap;
 }
+
 .order-table-body table tbody tr {
     border-bottom: 1px solid #f5f2f2;
 }
+
 .order-table-body table tbody td {
     padding: 15px 20px;
     font-family: MontMedium;
@@ -934,6 +1039,7 @@ footer p {
     color: var(--text);
     cursor: default;
 }
+
 .order-customer h5 {
     font-family: MontSemiBold;
     white-space: nowrap;
@@ -941,11 +1047,13 @@ footer p {
     color: #1a2638;
     margin-bottom: 0;
 }
+
 .order-customer span {
     font-family: MontMedium;
     font-size: 12px;
     color: var(--text);
 }
+
 .order-status-badge {
     display: inline-block;
     padding: 5px 12px;
@@ -957,33 +1065,39 @@ footer p {
 }
 
 
-@media screen and (max-width: 1150px ) {
+@media screen and (max-width: 1150px) {
     .dashboard-card-container {
         display: flex;
-        flex-wrap: wrap;  
+        flex-wrap: wrap;
     }
+
     .dashboard-card {
         width: 47%;
     }
+
     .chart-container {
         display: flex;
         flex-direction: column;
-     
+
     }
-    .sale-chart{
+
+    .sale-chart {
         width: 98%;
     }
-    .city-chart{
+
+    .city-chart {
         width: 98%;
     }
+
     .city-chart-body {
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
-       
-        
+
+
     }
+
     .city-chart-body canvas {
         width: 500px !important;
         height: 100% !important;
@@ -997,18 +1111,19 @@ footer p {
         width: 97%;
     }
 
-    .sale-chart{
+    .sale-chart {
         width: 100%;
     }
 
 
-    .payment-table-body{
+    .payment-table-body {
         overflow-x: scroll;
     }
-    .order-table-body{
+
+    .order-table-body {
         overflow-x: scroll;
     }
-    
+
 }
 
 @media screen and (max-width: 450px) {
@@ -1017,7 +1132,7 @@ footer p {
     }
 
     .title span {
-      font-size: 14px;
+        font-size: 14px;
     }
 
     .dashboard-card-inner .inner-text h2 {
@@ -1025,21 +1140,24 @@ footer p {
     }
 
     .dashboard-card-inner .inner-text span {
-       font-size: 13px;
+        font-size: 13px;
     }
 
-    .sale-chart-header h2, .city-chart-header h2 {
+    .sale-chart-header h2,
+    .city-chart-header h2 {
         font-size: 18px;
     }
 
-    .payment-table-header h2 , .order-table-header h2 {
+    .payment-table-header h2,
+    .order-table-header h2 {
         font-size: 18px;
     }
 
-    .payment-amount h5  {
+    .payment-amount h5 {
         font-size: 14px;
     }
-    .payment-amount span  {
+
+    .payment-amount span {
         font-size: 10px;
     }
 
@@ -1047,12 +1165,13 @@ footer p {
 
         font-size: 15px;
     }
+
     .order-customer span {
 
         font-size: 10px;
     }
 
-    .order-table-body table tbody td{
+    .order-table-body table tbody td {
         font-size: 13px;
         white-space: nowrap;
     }
@@ -1069,8 +1188,72 @@ footer p {
 ************************************ User Analytics Page CSS ************************************************
 ************************************************************************************************************/
 
+.dashboard-span {
+    color: var(--text) !important;
+    font-weight: bold;
+}
 
+.dashboard-span a {
 
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.user-dashboard-card-container {
+    width: 100%;
+    display: flex;
+    gap: 18px;
+    padding-top: 40px;
+}
+
+.user-dashboard-card {
+    width: 23%;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 20px 20px;
+}
+
+.user-card-icon {
+    width: 35px;
+    height: 35px;
+    padding: 10px;
+    border-radius: 7px;
+    background-color: rgba(var(--i));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 0 8px rgba(var(--i), 0.282);
+}
+
+.user-card-icon i {
+    color: #fff;
+    font-size: 15px;
+}
+
+.user-dashboard-card-bottom {
+    margin-top: 30px;
+}
+
+.user-dashboard-card-bottom h4 {
+    font-family: MontRegular;
+    font-size: 15px;
+    color: var(--text);
+}
+
+.user-dashboard-card-bottom h2 {
+    font-family: MontSemiBold;
+    font-size: 26px;
+    font-weight: 500;
+    margin-top: 10px;
+    color: var(--text);
+}
+
+.user-dashboard-card-bottom div{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
 
 /************************************************************************************************************
 ************************************ User Analytics Page CSS ************************************************

@@ -15,7 +15,7 @@
                     <span>Sales</span>
                     <h2>32,567</h2>
                 </div>
-                <div class="inner-icon" style="--i: 84, 109, 254 ;">
+                <div class="inner-icon" style="--i: 84, 109, 254;">
                     <i class="fa-solid fa-bag-shopping"></i>
                 </div>
 
