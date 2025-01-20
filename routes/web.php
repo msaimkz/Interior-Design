@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Admin\AdminController;
+use App\Http\Controllers\Admin\AdminProfileController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -24,3 +25,7 @@ Route::middleware([
 Route::get('/Admin/Dashboard/Sale-Overview',[AdminController::class,'index'])->name('Admin.dashboard.index');
 Route::get('/Admin/Dashboard/User-Analytics',[AdminController::class,'user'])->name('Admin.dashboard.user');
 Route::get('/Admin/Dashboard/Products-Analytics',[AdminController::class,'sale'])->name('Admin.dashboard.sale');
+
+// Admin Profile Routes
+Route::get('/Admin/Dashboard/My-Profile',[AdminProfileController::class,'profile'])->name('Admin.profile');
+

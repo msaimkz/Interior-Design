@@ -295,7 +295,7 @@
                     </div>
                     <ul class="profile-dropdown">
                         <li class="drop-item" style="--i: #667CFE;">
-                            <a href="">
+                            <a href="{{ route('Admin.profile') }}">
                                 <span class="profile-icon"><i class="fa-solid fa-user"></i></span>
                                 <span class="profile-text">Profile</span>
                             </a>
