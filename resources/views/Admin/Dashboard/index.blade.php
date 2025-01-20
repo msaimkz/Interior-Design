@@ -128,6 +128,34 @@
             </div>
         </div>
     </div>
+    <div class="chart-container">
+        <div class="order-chart">
+            <div class="order-chart-header">
+                <h2>Order Statistics</h2>
+
+                <div class="dropdown">
+                    <span class="dropdown-toggle drop-down-span" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                        aria-expanded="false">Sort By</span>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">This Week</a></li>
+                        <li><a class="dropdown-item" href="#">Last Week</a></li>
+                        <li><a class="dropdown-item" href="#">This Month</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="order-chart-body">
+                <canvas id="OrderChart"></canvas>
+            </div>
+        </div>
+        <div class="recent-order-chart">
+            <div class="recent-order-chart-header">
+                <h2>Recent Order</h2>
+            </div>
+            <div class="recent-order-chart-body">
+                <canvas id="RecentOrderChart"></canvas>
+            </div>
+        </div>
+    </div>
     <div class="table-container">
         <div class="payment-table">
             <div class="payment-table-header">

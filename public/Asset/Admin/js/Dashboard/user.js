@@ -57,21 +57,21 @@ function SessionChart() {
             scales: {
                 x: {
                     grid: {
-                        display: false, // Remove vertical gridlines
-                        drawBorder: false, // Remove border line
+                        display: false, 
+                        drawBorder: false, 
                     },
                     ticks: {
-                        color: "rgba(0,0,0,0.8)", // Keep x-axis labels visible
+                        color: "rgba(0,0,0,0.8)", 
                     },
                 },
                 y: {
                     beginAtZero: true,
                     grid: {
-                        display: false, // Remove horizontal gridlines
-                        drawBorder: false, // Remove border line
+                        display: false, 
+                        drawBorder: false, 
                     },
                     ticks: {
-                        color: "rgba(0,0,0,0.8)", // Keep y-axis labels visible
+                        color: "rgba(0,0,0,0.8)", 
                     },
                 },
             },
