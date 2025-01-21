@@ -1749,21 +1749,24 @@ footer p {
 ************************************ Profile Page CSS ************************************************
 ************************************************************************************************************/
 
-.profile-top-container{
+.profile-top-container {
     width: 100%;
     margin-top: 20px;
     background-color: #fff;
     border-radius: 7px;
     overflow: hidden;
 }
-.profile-background-image img{
+
+.profile-background-image img {
     width: 100%;
 }
-.profile-about{
+
+.profile-about {
     width: 200px;
     position: relative;
 }
-.profile-img{
+
+.profile-img {
     width: 90px;
     height: 90px;
     border: 5px solid #fff;
@@ -1771,20 +1774,22 @@ footer p {
     position: absolute;
     left: 10%;
     top: -30%;
-    
+
 }
-.profile-img img{
+
+.profile-img img {
     width: 100%;
     height: 100%;
     border-radius: 50%;
     object-fit: cover;
 }
-.profile-content{
+
+.profile-content {
     padding: 30px;
     padding-top: 50px;
 }
 
-.profile-content .profile-name{
+.profile-content .profile-name {
 
     font-family: MontSemiBold;
     color: var(--text);
@@ -1793,16 +1798,18 @@ footer p {
     margin: 0;
 }
 
-.profile-content .profile-designation{
+.profile-content .profile-designation {
     font-family: MontMedium;
     font-size: 14px;
     color: #8DAACE;
 }
-.profile-content .profile-location{
+
+.profile-content .profile-location {
     display: flex;
     gap: 25px;
     margin-top: 5px;
 }
+
 .profile-content .profile-location p {
     font-family: MontMedium;
     font-size: 14px;
@@ -1814,21 +1821,23 @@ footer p {
 
 }
 
-.profile-content .profile-location p  i{
+.profile-content .profile-location p i {
     font-size: 12px;
 
 }
 
-.profile-tab{
+.profile-tab {
     display: flex;
     padding-inline: 10px;
 }
-.profile-tab .profile-tab-child{
+
+.profile-tab .profile-tab-child {
     padding-inline: 30px;
     cursor: pointer;
     text-align: center;
 }
-.profile-tab .profile-tab-child h4{
+
+.profile-tab .profile-tab-child h4 {
     font-family: MontMedium;
     color: var(--text);
     font-size: 17px;
@@ -1836,41 +1845,56 @@ footer p {
     margin-bottom: 7px;
     transition: 0.5s ease;
 }
-.profile-tab .profile-tab-child h4:hover{
+
+.profile-tab .profile-tab-child h4:hover {
     color: var(--sub);
 }
-.profile-tab .profile-tab-child.active .line{
+
+.profile-tab .profile-tab-child.active .line {
     width: 90px;
     height: 3px;
     background-color: var(--sub);
     transition: 1s ease-in-out;
 }
-.profile-tab .profile-tab-child.active:nth-child(2)  .line{
+
+.profile-tab .profile-tab-child.active:nth-child(2) .line {
     width: 130px;
 
 }
-.profile-bottom-container{
+
+.profile-bottom-container {
     width: 100%;
     padding-top: 30px;
     display: flex;
     gap: 30px;
 }
-.profile-bottom-left-container{
+
+.profile-bottom-left-container {
     width: 70%;
     min-height: 200px;
+    position: relative;
+}
+
+.About-Profile-tab {
+    width: 100%;
     background-color: #fff;
     border-radius: 5px;
+    display: none;
+
 }
-.profile-bottom-bio{
+
+.profile-bottom-bio {
     width: 100%;
     border-bottom: 1px solid #1a26381f;
     padding: 20px 30px;
 }
-.profile-bottom-bio .bio-heading{
+
+.profile-bottom-bio .bio-heading {
     display: flex;
     align-items: center;
 }
-.profile-bottom-bio .bio-heading h3{
+
+.profile-bottom-bio .bio-heading h3 {
     font-family: MontSemiBold;
     color: #1a2638b7;
     font-size: 20px;
@@ -1879,21 +1903,21 @@ footer p {
     margin: 0;
 }
 
-.profile-bottom-bio p{
+.profile-bottom-bio p {
     font-family: MontMedium;
     font-size: 16px;
     color: #8DAACE;
     margin-top: 20px;
 }
 
-.profile-bottom-contact{
+.profile-bottom-contact {
     width: 100%;
     border-bottom: 1px solid #1a26381f;
     padding: 20px 30px;
     margin-top: 20px;
 }
 
-.contact-heading h3{
+.contact-heading h3 {
     font-family: MontSemiBold;
     color: #1a2638b7;
     text-transform: uppercase;
@@ -1901,40 +1925,45 @@ footer p {
     text-wrap: nowrap;
     margin: 0;
 }
-.contact-body{
+
+.contact-body {
     margin-top: 20px;
 }
 
-.contact-body-child{
+.contact-body-child {
     display: flex;
     gap: 13px;
     align-items: center;
     margin-top: 18px;
 }
-.contact-body-child i{
+
+.contact-body-child i {
     font-size: 13px;
     color: rgb(var(--i));
 }
-.contact-body-child p{
+
+.contact-body-child p {
     margin: 0;
     font-family: MontMedium;
     font-size: 15px;
     color: #8DAACE;
 }
-.contact-body-child p span{
+
+.contact-body-child p span {
 
     color: #1a263894;
     font-size: 16px;
     font-family: MontSemiBold;
 
 }
-.profile-bottom-social{
+
+.profile-bottom-social {
     width: 100%;
     padding: 20px 30px;
     margin-top: 20px;
 }
 
-.social-heading h3{
+.social-heading h3 {
     font-family: MontSemiBold;
     color: #1a2638b7;
     font-size: 20px;
@@ -1942,52 +1971,61 @@ footer p {
     text-transform: uppercase;
     margin: 0;
 }
-.social-body{
+
+.social-body {
     margin-top: 20px;
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
 }
-.social-body-child{
+
+.social-body-child {
     width: 230px;
     align-items: center;
     display: flex;
     gap: 16px;
 }
-.social-icon{
+
+.social-icon {
     width: 50px;
     height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(var(--i),0.25);
+    background-color: rgb(var(--i), 0.25);
     border-radius: 7px;
 }
-.social-icon i{
+
+.social-icon i {
     font-size: 23px;
     color: rgb(var(--i));
 }
-.social-text h3{
+
+.social-text h3 {
     color: #1a263894;
     font-size: 16px;
     font-family: MontSemiBold;
     margin: 0;
 }
-.social-text span{
+
+.social-text span {
     font-family: MontMedium;
     font-size: 15px;
     color: #8DAACE;
 }
-.profile-bottom-rigth-container{
+
+.profile-bottom-rigth-container {
     width: 25%;
     background-color: #fff;
     border-radius: 7px;
     max-height: fit-content;
 }
-.profile-bottom-rigth-heading{
+
+.profile-bottom-rigth-heading {
     padding: 30px;
 }
-.profile-bottom-rigth-heading h3{
+
+.profile-bottom-rigth-heading h3 {
     font-family: MontSemiBold;
     color: #1a2638b7;
     font-size: 20px;
@@ -1995,7 +2033,8 @@ footer p {
     text-transform: uppercase;
     margin: 0;
 }
-.profile-bottom-body-child{
+
+.profile-bottom-body-child {
     padding: 20px;
     border-block: 1px solid #4d678f1e;
     display: flex;
@@ -2003,7 +2042,7 @@ footer p {
 
 }
 
-.profile-bottom-body-child p{
+.profile-bottom-body-child p {
     font-family: MontMedium;
     font-size: 13px;
     color: #8DAACE;
@@ -2011,11 +2050,119 @@ footer p {
 
 
 }
-.profile-bottom-body-child p span{
+
+.profile-bottom-body-child p span {
     color: #1a263894;
     font-size: 16px;
     font-family: MontSemiBold;
 }
+
+.Edit-Profile-tab {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.edit-personal-info {
+    width: 100%;
+    padding: 20px 30px;
+    border-bottom: 1px solid #e2e6f1;
+
+}
+
+.edit-contact-info,
+.edit-social-info,
+.edit-about-info {
+    width: 100%;
+    padding: 20px 30px;
+    margin-top: 20px;
+    border-bottom: 1px solid #e2e6f1;
+}
+
+.profile-info-heading h3 {
+    font-family: MontSemiBold;
+    color: #1a2638b7;
+    font-size: 20px;
+    text-wrap: nowrap;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.profile-info-body-child {
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 120px;
+}
+
+#genderChild {
+    gap: 110px;
+}
+#bioChild {
+    gap: 80px;
+}
+
+.edit-profile-head {
+    min-width: 100px;
+}
+
+.profile-info-body-child h3 {
+    font-family: MontMedium;
+    color: #1a2638b7;
+    font-size: 16px;
+    text-wrap: nowrap;
+    margin: 0;
+}
+
+.profile-info-body-child .edit-profile-input {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.profile-info-body-child .edit-profile-input input {
+
+    width: 490px;
+    font-family: MontMedium;
+    font-size: 13px;
+    color: #1a2638;
+    padding: 9px 10px;
+    border-radius: 5px;
+    border: 1px solid #e2e6f1;
+    transition: all 0.5s ease-in-out;
+}
+
+.profile-info-body-child .edit-profile-input input:focus {
+    border-color: rgb(84, 109, 254);
+    box-shadow: 0 0 10px rgba(84, 109, 254, 0.5);
+    outline: none;
+}
+
+.profile-info-body-child .edit-profile-input textarea {
+
+    resize: none;
+    width: 490px;
+    font-family: MontMedium;
+    font-size: 13px;
+    color: #1a2638;
+    padding: 9px 10px;
+    border-radius: 5px;
+    border: 1px solid #e2e6f1;
+    transition: all 0.5s ease-in-out;
+}
+
+.profile-info-body-child .edit-profile-input textarea:focus {
+    border-color: rgb(84, 109, 254);
+    box-shadow: 0 0 10px rgba(84, 109, 254, 0.5);
+    outline: none;
+}
+
+.profile-info-body-child .edit-profile-input span {
+    color: red;
+    font-size: 13px;
+    font-family: MontSemiBold;
+}
+
 /************************************************************************************************************
 ************************************ Profile Page CSS ************************************************
 ************************************************************************************************************/
