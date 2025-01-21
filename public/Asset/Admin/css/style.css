@@ -1750,10 +1750,105 @@ footer p {
 ************************************************************************************************************/
 
 .profile-top-container{
+    width: 100%;
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 7px;
+    overflow: hidden;
+}
+.profile-background-image img{
+    width: 100%;
+}
+.profile-about{
+    width: 200px;
+    position: relative;
+}
+.profile-img{
+    width: 90px;
+    height: 90px;
+    border: 5px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    left: 10%;
+    top: -30%;
     
 }
+.profile-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.profile-content{
+    padding: 30px;
+    padding-top: 50px;
+}
 
+.profile-content .profile-name{
 
+    font-family: MontSemiBold;
+    color: var(--text);
+    font-size: 20px;
+    text-wrap: nowrap;
+    margin: 0;
+}
+
+.profile-content .profile-designation{
+    font-family: MontMedium;
+    font-size: 14px;
+    color: #8DAACE;
+}
+.profile-content .profile-location{
+    display: flex;
+    gap: 25px;
+    margin-top: 5px;
+}
+.profile-content .profile-location p {
+    font-family: MontMedium;
+    font-size: 14px;
+    color: #8DAACE;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    text-wrap: nowrap;
+
+}
+
+.profile-content .profile-location p  i{
+    font-size: 12px;
+
+}
+
+.profile-tab{
+    display: flex;
+    padding-inline: 10px;
+}
+.profile-tab .profile-tab-child{
+    padding-inline: 30px;
+    cursor: pointer;
+    text-align: center;
+}
+.profile-tab .profile-tab-child h4{
+    font-family: MontMedium;
+    color: var(--text);
+    font-size: 17px;
+    text-wrap: nowrap;
+    margin-bottom: 7px;
+    transition: 0.5s ease;
+}
+.profile-tab .profile-tab-child h4:hover{
+    color: var(--sub);
+}
+.profile-tab .profile-tab-child.active .line{
+    width: 90px;
+    height: 3px;
+    background-color: var(--sub);
+    transition: 1s ease-in-out;
+}
+.profile-tab .profile-tab-child.active:nth-child(2)  .line{
+    width: 130px;
+
+}
 /************************************************************************************************************
 ************************************ Profile Page CSS ************************************************
 ************************************************************************************************************/
