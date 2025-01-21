@@ -1849,6 +1849,173 @@ footer p {
     width: 130px;
 
 }
+.profile-bottom-container{
+    width: 100%;
+    padding-top: 30px;
+    display: flex;
+    gap: 30px;
+}
+.profile-bottom-left-container{
+    width: 70%;
+    min-height: 200px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+.profile-bottom-bio{
+    width: 100%;
+    border-bottom: 1px solid #1a26381f;
+    padding: 20px 30px;
+}
+.profile-bottom-bio .bio-heading{
+    display: flex;
+    align-items: center;
+}
+.profile-bottom-bio .bio-heading h3{
+    font-family: MontSemiBold;
+    color: #1a2638b7;
+    font-size: 20px;
+    text-wrap: nowrap;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.profile-bottom-bio p{
+    font-family: MontMedium;
+    font-size: 16px;
+    color: #8DAACE;
+    margin-top: 20px;
+}
+
+.profile-bottom-contact{
+    width: 100%;
+    border-bottom: 1px solid #1a26381f;
+    padding: 20px 30px;
+    margin-top: 20px;
+}
+
+.contact-heading h3{
+    font-family: MontSemiBold;
+    color: #1a2638b7;
+    text-transform: uppercase;
+    font-size: 20px;
+    text-wrap: nowrap;
+    margin: 0;
+}
+.contact-body{
+    margin-top: 20px;
+}
+
+.contact-body-child{
+    display: flex;
+    gap: 13px;
+    align-items: center;
+    margin-top: 18px;
+}
+.contact-body-child i{
+    font-size: 13px;
+    color: rgb(var(--i));
+}
+.contact-body-child p{
+    margin: 0;
+    font-family: MontMedium;
+    font-size: 15px;
+    color: #8DAACE;
+}
+.contact-body-child p span{
+
+    color: #1a263894;
+    font-size: 16px;
+    font-family: MontSemiBold;
+
+}
+.profile-bottom-social{
+    width: 100%;
+    padding: 20px 30px;
+    margin-top: 20px;
+}
+
+.social-heading h3{
+    font-family: MontSemiBold;
+    color: #1a2638b7;
+    font-size: 20px;
+    text-wrap: nowrap;
+    text-transform: uppercase;
+    margin: 0;
+}
+.social-body{
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.social-body-child{
+    width: 230px;
+    align-items: center;
+    display: flex;
+    gap: 16px;
+}
+.social-icon{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(var(--i),0.25);
+    border-radius: 7px;
+}
+.social-icon i{
+    font-size: 23px;
+    color: rgb(var(--i));
+}
+.social-text h3{
+    color: #1a263894;
+    font-size: 16px;
+    font-family: MontSemiBold;
+    margin: 0;
+}
+.social-text span{
+    font-family: MontMedium;
+    font-size: 15px;
+    color: #8DAACE;
+}
+.profile-bottom-rigth-container{
+    width: 25%;
+    background-color: #fff;
+    border-radius: 7px;
+    max-height: fit-content;
+}
+.profile-bottom-rigth-heading{
+    padding: 30px;
+}
+.profile-bottom-rigth-heading h3{
+    font-family: MontSemiBold;
+    color: #1a2638b7;
+    font-size: 20px;
+    text-wrap: nowrap;
+    text-transform: uppercase;
+    margin: 0;
+}
+.profile-bottom-body-child{
+    padding: 20px;
+    border-block: 1px solid #4d678f1e;
+    display: flex;
+    gap: 15px;
+
+}
+
+.profile-bottom-body-child p{
+    font-family: MontMedium;
+    font-size: 13px;
+    color: #8DAACE;
+    margin: 0;
+
+
+}
+.profile-bottom-body-child p span{
+    color: #1a263894;
+    font-size: 16px;
+    font-family: MontSemiBold;
+}
 /************************************************************************************************************
 ************************************ Profile Page CSS ************************************************
 ************************************************************************************************************/

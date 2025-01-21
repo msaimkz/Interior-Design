@@ -240,9 +240,9 @@ function RecentOrderChart() {
                     label: "Orders",
                     data: [65, 59, 90],
                     backgroundColor: [
-                        "rgb(255, 99, 132)",
-                        "rgb(54, 162, 235)",
-                        "rgb(255, 205, 86)",
+                        "rgb(12, 215, 177)",
+                        "rgb(84, 109, 254)",
+                        "rgb(215, 124, 247)",
                     ],
                     hoverOffset: 4,
                     
@@ -252,7 +252,7 @@ function RecentOrderChart() {
         },
         options: {
             responsive: true,
-            maintainAspectRatio: false, // Allows custom canvas size
+            maintainAspectRatio: false, 
             layout: {
                 padding: 10,
             },
@@ -261,13 +261,13 @@ function RecentOrderChart() {
                     enabled: true,
                 },
                 legend: {
-                    display: true, // Shows the legend
+                    display: true, 
                     position: "bottom",
                 },
-                // Custom plugin for center text
+               
                 centerText: {
                     display: true,
-                    text: "Total: 214", // Default text
+                    text: "Total: 214", 
                 },
             },
         },
