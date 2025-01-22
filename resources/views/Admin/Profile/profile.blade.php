@@ -36,11 +36,11 @@
 
             </div>
             <div class="profile-tab">
-                <div class="profile-tab-child">
+                <div class="profile-tab-child active tab-button" data-toggle="AboutProfileTab" >
                     <h4>About</h4>
                     <div class="line"></div>
                 </div>
-                <div class="profile-tab-child">
+                <div class="profile-tab-child tab-button" data-toggle="EditProfileTab">
                     <h4>Edit Profile</h4>
                     <div class="line"></div>
                 </div>
@@ -48,7 +48,7 @@
         </div>
         <div class="profile-bottom-container">
             <div class="profile-bottom-left-container">
-                <div class="About-Profile-tab">
+                <div class="profile-content-tab active" id="AboutProfileTab">
                     <div class="profile-bottom-bio">
                         <div class="bio-heading">
                             <span><span class="me-1">✨</span></span>
@@ -135,7 +135,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="Edit-Profile-tab">
+                <div class="profile-content-tab" id="EditProfileTab">
                     <form name="ProfileForm" id="ProfileForm">
                         <div class="edit-personal-info">
                             <div class="profile-info-heading">
@@ -312,11 +312,11 @@
                 </div>
 
             </div>
-            <div class="profile-bottom-rigth-container">
-                <div class="profile-bottom-rigth-heading">
+            <div class="profile-bottom-right-container">
+                <div class="profile-bottom-right-heading">
                     <h3>Personal Info</h3>
                 </div>
-                <div class="profile-bottom-rigth-body">
+                <div class="profile-bottom-right-body">
                     <div class="profile-bottom-body-child">
                         <p>
                             <span>Name :</span>
@@ -354,4 +354,10 @@
             </div>
         </div>
     </div>
+@endsection
+
+@section('script')
+
+<script src="{{ asset('Asset/Admin/js/profile.js') }}"></script>
+    
 @endsection

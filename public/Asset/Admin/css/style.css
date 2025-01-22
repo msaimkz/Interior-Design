@@ -1850,6 +1850,10 @@ footer p {
     color: var(--sub);
 }
 
+.profile-tab .profile-tab-child.active h4 {
+    color: var(--sub);
+}
+
 .profile-tab .profile-tab-child.active .line {
     width: 90px;
     height: 3px;
@@ -1871,16 +1875,22 @@ footer p {
 
 .profile-bottom-left-container {
     width: 70%;
-    min-height: 200px;
+    min-height: fit-content;
     position: relative;
 }
 
-.About-Profile-tab {
+.profile-content-tab {
     width: 100%;
     background-color: #fff;
     border-radius: 5px;
     display: none;
 
+
+}
+
+.profile-content-tab.active {
+
+    display: block;
 }
 
 .profile-bottom-bio {
@@ -2014,18 +2024,18 @@ footer p {
     color: #8DAACE;
 }
 
-.profile-bottom-rigth-container {
+.profile-bottom-right-container {
     width: 25%;
     background-color: #fff;
     border-radius: 7px;
     max-height: fit-content;
 }
 
-.profile-bottom-rigth-heading {
+.profile-bottom-right-heading {
     padding: 30px;
 }
 
-.profile-bottom-rigth-heading h3 {
+.profile-bottom-right-heading h3 {
     font-family: MontSemiBold;
     color: #1a2638b7;
     font-size: 20px;
@@ -2098,6 +2108,7 @@ footer p {
 #genderChild {
     gap: 110px;
 }
+
 #bioChild {
     gap: 80px;
 }
@@ -2161,6 +2172,168 @@ footer p {
     color: red;
     font-size: 13px;
     font-family: MontSemiBold;
+}
+
+@media screen and (max-width:1280px) {
+    .profile-info-body-child .edit-profile-input input,
+    .profile-info-body-child .edit-profile-input textarea  {
+        width: 390px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+
+    .profile-bottom-container {
+        flex-direction: column;
+    }
+
+    .profile-bottom-left-container,
+    .profile-bottom-right-container {
+        width: 98%;
+    }
+
+    .profile-info-body-child {
+        flex-direction: column;
+        align-items: start;
+        gap: 40px;
+    }
+
+    #genderChild,
+    #bioChild {
+        gap: 40px;
+    }
+
+    .profile-info-body-child .edit-profile-input {
+        width: 98%;
+    }
+
+    .profile-info-body-child .edit-profile-input input,
+    .profile-info-body-child .edit-profile-input textarea {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+
+    .profile-bottom-bio p {
+        font-size: 12px;
+    }
+
+    .contact-body-child p {
+        font-size: 12px;
+    }
+
+    .contact-body-child p span {
+        font-size: 14px;
+    }
+
+    .contact-body-child i {
+        font-size: 12px;
+    }
+
+    .social-body-child {
+        width: 195px;
+    }
+
+    .social-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .profile-info-body-child {
+        gap: 30px;
+    }
+
+    #genderChild,
+    #bioChild {
+        gap: 30px;
+    }
+
+    .profile-info-body-child h3 {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+    .profile-img {
+        width: 70px;
+        height: 70px;
+        left: 10%;
+        top: -15%;
+    }
+
+
+    .profile-content .profile-name {
+        font-size: 17px;
+    }
+
+    .profile-content .profile-designation {
+        font-size: 12px;
+    }
+
+    .profile-content .profile-location {
+        gap: 18px;
+    }
+
+    .profile-content .profile-location p {
+        font-size: 12px;
+    }
+
+    .profile-content .profile-location p i {
+        font-size: 10px;
+    }
+
+    .profile-tab .profile-tab-child {
+        padding-inline: 10px;
+    }
+
+    .profile-tab .profile-tab-child h4 {
+        font-size: 13px;
+    }
+
+    .profile-bottom-bio .bio-heading h3,
+    .contact-heading h3,
+    .social-heading h3,
+    .profile-bottom-right-heading h3,
+    .profile-info-heading h3 {
+        font-size: 16px;
+    }
+
+    .profile-bottom-bio p {
+        font-size: 10px;
+    }
+
+    .contact-body,
+    .social-body {
+        margin-top: 40px;
+    }
+
+    .contact-body-child p {
+        font-size: 10px;
+    }
+
+    .contact-body-child p span {
+        font-size: 12px;
+    }
+
+    .contact-body-child i {
+        font-size: 10px;
+    }
+
+    .profile-bottom-body-child p {
+        font-size: 11px;
+    }
+
+    .profile-bottom-body-child p span {
+        font-size: 14px;
+    }
+
+    .profile-info-body-child .edit-profile-input {
+        width: 100%;
+    }
+
+
 }
 
 /************************************************************************************************************

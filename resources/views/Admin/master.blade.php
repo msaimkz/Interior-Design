@@ -362,6 +362,12 @@
     <script src="{{ asset('Asset/Admin/js/script.js') }}"></script>
     {{-- Custom  CDN  Script --}}
 
+    {{-- Jquery CDN Script --}}
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    {{-- Jquery CDN Script --}}
+
 
     @yield('script')
 
