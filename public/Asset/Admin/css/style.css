@@ -2465,7 +2465,11 @@ footer p {
     min-height: 120px;
     border-radius: 7px;
     background-color: #fff;
-    padding: 20px;
+    padding: 20px 0px;
+}
+
+.setting-right-top {
+    padding: 0px 20px;
 }
 
 .setting-right-tab {
@@ -2473,6 +2477,10 @@ footer p {
     min-height: 100px;
     border-radius: 10px;
     border: 1px solid #e2e6f1;
+    display: none;
+}
+.setting-right-tab.active{
+    display: block;
 }
 
 .setting-right-content {
@@ -2497,6 +2505,11 @@ footer p {
     margin-top: 5px;
 }
 
+.setting-right-content-head p b {
+    color: #0cd7b1;
+
+}
+
 .setting-right-content-checkbox {
     width: 80px;
     border-radius: 5px;
@@ -2506,7 +2519,7 @@ footer p {
     padding: 7px;
 }
 
-.setting-right-content-checkbox.active{
+.setting-right-content-checkbox.active {
     background-color: rgba(84, 110, 254, 0.336);
 
 }
@@ -2522,7 +2535,8 @@ footer p {
     display: block;
     cursor: pointer;
 }
-.setting-right-content-checkbox div{
+
+.setting-right-content-checkbox div {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -2533,7 +2547,8 @@ footer p {
     box-sizing: border-box;
     overflow: hidden;
 }
-.setting-right-content-checkbox div .setting-checkbox-slide{
+
+.setting-right-content-checkbox div .setting-checkbox-slide {
     width: 32px;
     height: 28px;
     border-radius: 7px;
@@ -2543,12 +2558,14 @@ footer p {
     left: 5px;
     transition: all 0.5s;
 }
-.setting-right-content-checkbox input:checked + div .setting-checkbox-slide{
+
+.setting-right-content-checkbox input:checked+div .setting-checkbox-slide {
     transform: translateX(40px);
     background-color: #546dfe;
 
 }
-.setting-right-content-checkbox div .setting-checkbox-slide::before{
+
+.setting-right-content-checkbox div .setting-checkbox-slide::before {
 
     content: 'ON';
     width: 50px;
@@ -2563,7 +2580,8 @@ footer p {
     color: #546dfe;
 
 }
-.setting-right-content-checkbox div .setting-checkbox-slide::after{
+
+.setting-right-content-checkbox div .setting-checkbox-slide::after {
 
     content: 'OFF';
     width: 50px;
@@ -2578,6 +2596,180 @@ footer p {
     color: #8DAACE;
 
 }
+
+.setting-right-input {
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.setting-right-content-input {
+    width: 100%;
+}
+
+.setting-right-content-input input {
+    width: 98%;
+    font-family: MontMedium;
+    font-size: 13px;
+    color: #1a2638;
+    padding: 9px 10px;
+    border-radius: 5px;
+    border: 1px solid #e2e6f1;
+    transition: all 0.5s ease-in-out;
+}
+
+.setting-right-content-input input:focus {
+    border-color: rgb(84, 109, 254);
+    box-shadow: 0 0 10px rgba(84, 109, 254, 0.5);
+    outline: none;
+}
+
+.setting-right-content-input span {
+    color: red;
+    font-size: 13px;
+    font-family: MontSemiBold;
+}
+
+.setting-right-bottom {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 30px;
+    border-top: 1px solid #e2e6f1;
+
+}
+
+
+.setting-right-bottom button {
+    font-family: MontMedium;
+    color: #1a2638b7;
+    background-color: #E4ECF2;
+    font-size: 16px;
+}
+
+.setting-right-bottom .restore {
+    color: #1a2638b7;
+    background-color: #E4ECF2;
+    outline: none;
+
+}
+
+.setting-right-bottom .restore:active {
+    color: #1a2638b7;
+    background-color: #E4ECF2;
+    outline: none;
+    border-color: #E4ECF2;
+
+}
+
+.setting-right-bottom .restore:hover {
+    color: #1a2638b7;
+    outline: none;
+    background-color: #E4ECF2;
+
+}
+
+.setting-right-bottom .save {
+
+    background-color: #546dfe;
+    outline: none;
+    color: #fff;
+}
+
+.setting-right-bottom .save:active {
+    background-color: #546dfe;
+    outline: none;
+    color: #fff;
+}
+
+.setting-right-bottom .save:hover {
+    color: #E4ECF2;
+    background-color: #546dfe;
+
+}
+
+.security-main-content {
+    width: 100%;
+    display: flex;
+    gap: 40px;
+    padding: 20px;
+}
+
+.security-sub-content {
+    width: 200px;
+}
+
+.security-sub-content h3 {
+    font-family: MontSemiBold;
+    color: var(--text);
+    font-size: 18px;
+    margin: 0;
+}
+
+.security-sub-content p {
+    font-family: MontMedium;
+    font-size: 12px;
+    color: #8DAACE;
+    margin: 0px;
+    margin-top: 5px;
+}
+
+.security-sub-second-content {
+    width: calc(100% - 240px);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-height: 70px;
+}
+
+.security-sub-second-content-child {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+.security-sub-second-content-text {
+    width: 70%;
+
+}
+
+.security-sub-second-content-text h4 {
+    font-family: MontSemiBold;
+    color: var(--text);
+    font-size: 16px;
+    margin: 0;
+}
+
+.security-sub-second-content-text p {
+    font-family: MontMedium;
+    font-size: 12px;
+    color: #8DAACE;
+    margin: 0px;
+    margin-top: 10px;
+}
+
+.security-sub-second-content-select select {
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 1px solid #E4ECF2;
+    outline-color: #E4ECF2;
+    font-family: MontMedium;
+    font-size: 14px;
+    color: #8DAACE;
+}
+
+.security-sub-second-content-select select option {
+    padding: 100px;
+    display: block;
+    outline: 1px solid #E4ECF2;
+
+}
+
 /************************************************************************************************************
 ************************************ Setting Page CSS ************************************************
 ************************************************************************************************************/
