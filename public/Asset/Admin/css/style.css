@@ -2082,7 +2082,8 @@ footer p {
 
 .edit-contact-info,
 .edit-social-info,
-.edit-about-info {
+.edit-about-info
+ {
     width: 100%;
     padding: 20px 30px;
     margin-top: 20px;
@@ -2098,12 +2099,46 @@ footer p {
     margin: 0;
 }
 
-.profile-info-body-child {
+.profile-info-body-child,
+.profile-img-child {
     padding-top: 20px;
     display: flex;
     align-items: center;
     gap: 120px;
 }
+.profile-img-child{
+    gap: 40px;
+}
+.profile-img-child img{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+.btn-group button{
+    font-family: MontMedium;
+    color: #1a2638b7;
+    background-color: #E4ECF2;
+    font-size: 16px;
+}
+.btn-group .change-btn{
+    background-color: #546dfe;
+    color: #fff;
+
+}
+.btn-group .remove-btn:active{
+    background-color: #E4ECF2;
+    border-color: #E4ECF2;
+    outline: none;
+    color: #1a2638b7;
+
+
+}
+.btn-group .change-btn:active{
+    background-color: #546dfe;
+    color: #fff;
+}
+
+
 
 #genderChild {
     gap: 110px;
@@ -2172,6 +2207,28 @@ footer p {
     color: red;
     font-size: 13px;
     font-family: MontSemiBold;
+}
+
+.submit-button{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.submit-button button{
+    font-family: MontMedium;
+    color: #E4ECF2;
+    background-color: #546dfe;
+    font-size: 16px;
+}
+.submit-button button:active{
+    background-color: #546dfe;
+    outline: none;
+    color: #fff;
+}
+.submit-button .save-btn:hover{
+    color: #E4ECF2;
+    background-color: #546dfe;
+    
 }
 
 @media screen and (max-width:1280px) {
@@ -2291,6 +2348,10 @@ footer p {
     .profile-tab .profile-tab-child h4 {
         font-size: 13px;
     }
+
+.profile-img-child{
+    flex-direction: column;
+}
 
     .profile-bottom-bio .bio-heading h3,
     .contact-heading h3,

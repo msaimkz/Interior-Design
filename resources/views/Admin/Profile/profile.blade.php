@@ -36,7 +36,7 @@
 
             </div>
             <div class="profile-tab">
-                <div class="profile-tab-child active tab-button" data-toggle="AboutProfileTab" >
+                <div class="profile-tab-child active tab-button" data-toggle="AboutProfileTab">
                     <h4>About</h4>
                     <div class="line"></div>
                 </div>
@@ -136,7 +136,38 @@
                     </div>
                 </div>
                 <div class="profile-content-tab" id="EditProfileTab">
+
                     <form name="ProfileForm" id="ProfileForm">
+                        <div class="edit-personal-info">
+                            <div class="profile-info-heading">
+                                <h3>Profile Image :</h3>
+                            </div>
+                            <div class="profile-info-body">
+                                <div class="profile-img-child">
+                                    <img src="{{ asset('Asset/Admin/img/men-avatar.jpg') }}" alt="">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn  change-btn">Change</button>
+                                        <button type="button" class="btn  remove-btn">Remove</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="edit-personal-info">
+                            <div class="profile-info-heading">
+                                <h3>Profile Background Image :</h3>
+                            </div>
+                            <div class="profile-info-body">
+                                <div class="profile-img-child">
+                                    <img src="{{ asset('Asset/Admin/img/Profile-Background.jpg') }}" alt="">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn  change-btn">Change</button>
+                                        <button type="button" class="btn  remove-btn">Remove</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
                         <div class="edit-personal-info">
                             <div class="profile-info-heading">
                                 <h3>Personal Info :</h3>
@@ -235,7 +266,7 @@
                                     </div>
                                     <div class="edit-profile-input">
                                         <textarea name="address" id="address" placeholder="Address" cols="" rows="5"></textarea>
-                                       
+
                                         <span></span>
                                     </div>
                                 </div>
@@ -276,7 +307,7 @@
                                         <span></span>
                                     </div>
                                 </div>
-                                <div class="profile-info-body-child" >
+                                <div class="profile-info-body-child">
                                     <div class="edit-profile-head">
                                         <h3>Youtube :</h3>
                                     </div>
@@ -293,17 +324,24 @@
                                 <h3>About :</h3>
                             </div>
                             <div class="profile-info-body">
-                              
+
                                 <div class="profile-info-body-child" id="bioChild">
                                     <div class="edit-profile-head">
                                         <h3>Biographical Info :</h3>
                                     </div>
                                     <div class="edit-profile-input">
                                         <textarea name="bio" id="bio" placeholder="Biographical Info" cols="" rows="5"></textarea>
-                                       
+
                                         <span></span>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
+                        <div class="edit-about-info">
+                            
+                            <div class="profile-info-body submit-button" >
+
+                                <button class="btn save-btn" type="submit">Save</button>
                             </div>
                         </div>
 
@@ -357,7 +395,5 @@
 @endsection
 
 @section('script')
-
-<script src="{{ asset('Asset/Admin/js/profile.js') }}"></script>
-    
+    <script src="{{ asset('Asset/Admin/js/profile.js') }}"></script>
 @endsection

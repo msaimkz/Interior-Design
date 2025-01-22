@@ -282,10 +282,10 @@
                 </div>
 
                 <div class="header-second">
-                    <div class="notifications">
+                    <a class="notifications">
                         <i class="fa-solid fa-bell"></i>
                         <div class="dot"></div>
-                    </div>
+                    </a>
                     <div class="header-profile">
                         <div class="img">
                             <img src="{{ asset('Asset/Admin/img/men-avatar.jpg') }}" alt="">
@@ -302,8 +302,8 @@
                         </li>
                         <li class="drop-item" style="--i: #D77CF7;">
                             <a href="">
-                                <span class="profile-icon"><i class="fa-solid fa-envelope"></i></span>
-                                <span class="profile-text">Inbox</span>
+                                <span class="profile-icon"><i class="fa-solid fa-gear"></i></span>
+                                <span class="profile-text">Setting</span>
                             </a>
                         </li>
                         <li class="drop-item" style="--i: #F5BB71;">
