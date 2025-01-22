@@ -301,7 +301,7 @@
                             </a>
                         </li>
                         <li class="drop-item" style="--i: #D77CF7;">
-                            <a href="">
+                            <a href="{{ route('Admin.setting') }}">
                                 <span class="profile-icon"><i class="fa-solid fa-gear"></i></span>
                                 <span class="profile-text">Setting</span>
                             </a>

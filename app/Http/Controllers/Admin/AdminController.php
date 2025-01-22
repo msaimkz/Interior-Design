@@ -21,4 +21,6 @@ class AdminController extends Controller
 
         return view('Admin.Dashboard.product');
     }
+
+    
 }

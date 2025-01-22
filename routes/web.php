@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\Admin\AdminProfileController;
+use App\Http\Controllers\Admin\AdminSettingController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -28,4 +29,10 @@ Route::get('/Admin/Dashboard/Products-Analytics',[AdminController::class,'sale']
 
 // Admin Profile Routes
 Route::get('/Admin/Dashboard/My-Profile',[AdminProfileController::class,'profile'])->name('Admin.profile');
+
+
+// Admin Setting Routes
+Route::get('/Admin/Dashboard/Setting',[AdminSettingController::class,'index'])->name('Admin.setting');
+
+
 
