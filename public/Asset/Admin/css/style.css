@@ -2423,7 +2423,7 @@ footer p {
 
 .setting-left-container {
     width: 30%;
-    max-height: 150px;
+    max-height: 210px;
     padding: 20px;
     border-radius: 7px;
     min-height: 120px;
@@ -2480,7 +2480,8 @@ footer p {
     border: 1px solid #e2e6f1;
     display: none;
 }
-.setting-right-tab.active{
+
+.setting-right-tab.active {
     display: block;
 }
 
@@ -2771,8 +2772,211 @@ footer p {
 
 }
 
+
+@media screen and (max-width:1280px) {
+
+    .security-sub-second-content-text h4 {
+        font-size: 14px;
+    }
+
+    .security-sub-second-content-text p {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+
+    .setting-main-container {
+        flex-direction: column;
+    }
+
+    .setting-left-container,
+    .setting-right-container {
+        width: 98%;
+    }
+
+    .security-main-content {
+        flex-direction: column;
+    }
+
+    .security-sub-content,
+    .security-sub-second-content {
+        width: 98%;
+    }
+}
+
+@media screen and (max-width: 850px) {
+
+    .setting-right-content-head p {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .setting-right-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .setting-right-content-head h3,
+    .security-sub-content h3,
+    .security-sub-second-content-text h4 {
+        font-size: 13px;
+    }
+
+    .security-sub-second-content-child {
+        flex-direction: column;
+    }
+
+    .security-sub-second-content-text {
+        width: 98%;
+    }
+
+    .security-sub-second-content-select select {
+        width: 98%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+    .setting-right-bottom button {
+        font-size: 13px;
+    }
+
+    .security-sub-second-content-text p,
+    .security-sub-content p {
+        font-size: 10px;
+    }
+
+}
+
+@media screen and (max-width: 350px) {
+
+    .setting-right-bottom button {
+        font-size: 10px;
+    }
+
+
+}
+
 /************************************************************************************************************
 ************************************ Setting Page CSS ************************************************
+************************************************************************************************************/
+
+
+/************************************************************************************************************
+************************************ Mail Page CSS ************************************************
+************************************************************************************************************/
+
+.mail-main-container {
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+
+}
+
+.mail-left-container {
+    width: 33%;
+    min-height: 100px;
+    border-radius: 7px;
+    background-color: #fff;
+}
+
+.mail-left-first-child {
+    padding: 20px;
+    background-color: #f5f7fa;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.mail-left-first-child img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+}
+
+.mail-left-first-child div h4 {
+    font-family: MontSemiBold;
+    color: var(--text);
+    font-size: 16px;
+    margin: 0;
+}
+
+.mail-left-first-child div span {
+    font-family: MontMedium;
+    font-size: 13px;
+    color: #8DAACE;
+    margin: 0px;
+}
+
+.mail-left-second-child {
+    padding: 20px;
+
+}
+
+.mail-left-second-child h3 {
+    font-family: MontMedium;
+    font-size: 16px;
+    color: var(--text);
+    margin: 0px;
+}
+
+.mail-left-second-child-list{
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.mail-left-second-child-item{
+    display: flex;
+    cursor: pointer;
+    justify-content: space-between;
+}
+.mail-left-second-child-item p{
+    font-family: MontSemiBold;
+    color: #8DAACE;
+    font-size: 14px;
+    margin: 0;
+    transition: all 0.5s ease;
+}
+.mail-left-second-child-item p span{
+    margin-left: 7px;
+}
+
+.mail-left-second-child-item:hover p{
+    color: #546dfe;
+
+}
+
+.mail-left-second-child-item.active p{
+    color: #546dfe;
+
+}
+
+.mail-left-second-child-item .mail-badge{
+
+    display: inline-block;
+    padding: 3px 7px;
+    border-radius: 10px;
+    color: #fff;
+    font-family: MontSemiBold;
+    font-size: 10px;
+    background-color: rgb(var(--i));
+
+}
+
+.mail-right-container {
+    width: 66%;
+    min-height: 100px;
+    border-radius: 7px;
+    background-color: #fff;
+}
+
+/************************************************************************************************************
+************************************ Mail Page CSS ************************************************
 ************************************************************************************************************/
 
 /************************************************************************************************************

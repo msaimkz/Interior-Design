@@ -16,6 +16,9 @@
                 <div class="setting-tab  active" data-toggle="AccountSetting">
                     <h3>Account Setting</h3>
                 </div>
+                <div class="setting-tab" data-toggle="Notification">
+                    <h3>Notification</h3>
+                </div>
                 <div class="setting-tab" data-toggle="AccountSecurity">
                     <h3>Security</h3>
                 </div>
@@ -85,6 +88,32 @@
 
                             </div>
                         </div>
+                        <div class="setting-right-tab" id="Notification">
+                            <div class="security-main-content">
+                                <div class="security-sub-content">
+                                    <h3>Email Notifications</h3>
+                                    <p>Email notifications are the notifications you will receeive when you are offline, you can customize them by enabling or disabling them.</p>
+                                </div>
+                                <div class="security-sub-second-content">
+                                    <div class="security-sub-second-content-child">
+                                        <div class="security-sub-second-content-text">
+                                            <h4>Updates & Features</h4>
+                                            <p>Notifications about new updates and their features.</p>
+                                        </div>
+                                        <div class="setting-right-content-checkbox">
+                                            <input type="checkbox"  name="TwoStepVerification" id="TwoStepVerification"
+                                                class="setting-checkbox">
+                                            <div>
+                                                <span class="setting-checkbox-slide"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                  
+
+
+                                </div>
+                            </div>
+                        </div>     
                         <div class="setting-right-tab" id="AccountSecurity">
                             <div class="security-main-content">
                                 <div class="security-sub-content">

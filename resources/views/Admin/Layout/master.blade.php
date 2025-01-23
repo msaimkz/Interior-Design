@@ -282,7 +282,7 @@
                 </div>
 
                 <div class="header-second">
-                    <a class="notifications">
+                    <a href="{{ route('Admin.mail') }}" class="notifications">
                         <i class="fa-solid fa-bell"></i>
                         <div class="dot"></div>
                     </a>
@@ -303,7 +303,7 @@
                         <li class="drop-item" style="--i: #D77CF7;">
                             <a href="{{ route('Admin.setting') }}">
                                 <span class="profile-icon"><i class="fa-solid fa-gear"></i></span>
-                                <span class="profile-text">Setting</span>
+                                <span class="profile-text">Settings</span>
                             </a>
                         </li>
                         <li class="drop-item" style="--i: #F5BB71;">

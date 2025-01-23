@@ -1,7 +1,7 @@
 
 function toggleCheckbox() {
 
-    $('.setting-right-content-checkbox').click(function(){
+    $('.setting-right-content-checkbox').click(function () {
         $('.setting-right-content-checkbox').toggleClass('active')
     })
 }
@@ -11,37 +11,20 @@ toggleCheckbox()
 
 
 function Tab() {
+    const buttons = document.querySelectorAll('.setting-tab');
+    const tabs = document.querySelectorAll('.setting-right-tab');
 
-   
+    buttons.forEach(button => {
+        button.addEventListener('click', function () {
+            const id = this.dataset.toggle; 
 
-    const buttons = document.querySelectorAll('.setting-tab'); 
+            buttons.forEach(btn => btn.classList.remove('active'));
+            tabs.forEach(tab => tab.classList.remove('active'));
 
-    buttons.forEach(btn => {
-        btn.addEventListener('click', function() {
-            const id = $(this).data('toggle'); 
-            if(id == "AccountSecurity"){
-
-                $('#AccountSetting').removeClass('active');
-
-                $(buttons[0]).removeClass('active')
-                $(this).addClass('active');
-                $(`#${id}`).addClass('active');
-
-
-
-            }
-            else{
-                $('#AccountSecurity').removeClass('active');
-
-                $(buttons[1]).removeClass('active')
-                $(this).addClass('active');
-                $(`#${id}`).addClass('active');
-
-
-            }
+            this.classList.add('active');
+            document.getElementById(id).classList.add('active');
         });
     });
-    
 }
 
 Tab();
