@@ -306,6 +306,12 @@
                                 <span class="profile-text">Settings</span>
                             </a>
                         </li>
+                        <li class="drop-item" style="--i: #0CD7B1;">
+                            <a href="{{ route('Admin.support') }}">
+                                <span class="profile-icon"><i class="fa-solid fa-headset"></i></span>
+                                <span class="profile-text">Support</span>
+                            </a>
+                        </li>
                         <li class="drop-item" style="--i: #F5BB71;">
                             <form action="">
                                 <a href="">

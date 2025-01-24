@@ -70,6 +70,7 @@ function MailDetailModal() {
     const buttons = document.querySelectorAll('.mail-username');
     const modalContainer = document.querySelector('.mail-detail-container');
     const modal = document.querySelector('.mail-detail-modal');
+    const CloseBtn = document.querySelector('#Modal-Close-btn');
 
    
     buttons.forEach(button => {
@@ -80,6 +81,14 @@ function MailDetailModal() {
         });
     });
 
+    CloseBtn.addEventListener('click', function () {
+
+        modal.classList.remove('active');
+
+        setTimeout(() => {
+            modalContainer.classList.remove('active');
+        }, 50);
+    });
     
     modalContainer.addEventListener('click', function () {
 
