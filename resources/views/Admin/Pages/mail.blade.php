@@ -23,7 +23,8 @@
                 <div class="mail-left-second-child">
                     <h3>Mails</h3>
                     <div class="mail-left-second-child-list">
-                        <div class="mail-left-second-child-item mail-tab-btn active" data-toggle="AllMails" style="--i: 84,109,254 ;">
+                        <div class="mail-left-second-child-item mail-tab-btn active" data-toggle="AllMails"
+                            style="--i: 84,109,254 ;">
                             <p>
                                 <i class="fa-solid fa-inbox"></i>
                                 <span>All Mails</span>
@@ -37,7 +38,8 @@
                             </p>
                             <span class="mail-badge">89</span>
                         </div>
-                        <div class="mail-left-second-child-item mail-tab-btn" data-toggle="Starred" style="--i: 244,167,66 ;">
+                        <div class="mail-left-second-child-item mail-tab-btn" data-toggle="Starred"
+                            style="--i: 244,167,66 ;">
                             <p>
                                 <i class="fa-regular fa-star"></i>
                                 <span>Starred</span>
@@ -100,9 +102,9 @@
                                     <p>
                                         <span>Dear Team, kindly review the attached quarterly report before our meeting at 2
                                             PM tomorrow. Your insights are appreciated.</span>
-                                       <a href="javascript:void(0)">
-                                        <i class="fa-solid fa-star"></i>
-                                       </a>
+                                        <a href="javascript:void(0)">
+                                            <i class="fa-solid fa-star"></i>
+                                        </a>
                                     </p>
                                 </div>
                             </div>
@@ -127,9 +129,9 @@
                                     <p>
                                         <span>Dear Team, kindly review the attached quarterly report before our meeting at 2
                                             PM tomorrow. Your insights are appreciated.</span>
-                                       <a href="javascript:void(0)" class="active">
-                                        <i class="fa-solid fa-star"></i>
-                                       </a>
+                                        <a href="javascript:void(0)" class="active">
+                                            <i class="fa-solid fa-star"></i>
+                                        </a>
                                     </p>
                                 </div>
                             </div>
@@ -154,9 +156,9 @@
                                     <p>
                                         <span>Dear Team, kindly review the attached quarterly report before our meeting at 2
                                             PM tomorrow. Your insights are appreciated.</span>
-                                       <a href="javascript:void(0)" class="active">
-                                        <i class="fa-solid fa-star"></i>
-                                       </a>
+                                        <a href="javascript:void(0)" class="active">
+                                            <i class="fa-solid fa-star"></i>
+                                        </a>
                                     </p>
                                 </div>
                             </div>
@@ -181,9 +183,9 @@
                                     <p>
                                         <span>Dear Team, kindly review the attached quarterly report before our meeting at 2
                                             PM tomorrow. Your insights are appreciated.</span>
-                                       <a href="javascript:void(0)" class="active">
-                                        <i class="fa-solid fa-star"></i>
-                                       </a>
+                                        <a href="javascript:void(0)" class="active">
+                                            <i class="fa-solid fa-star"></i>
+                                        </a>
                                     </p>
                                 </div>
                             </div>
@@ -208,9 +210,9 @@
                                     <p>
                                         <span>Dear Team, kindly review the attached quarterly report before our meeting at 2
                                             PM tomorrow. Your insights are appreciated.</span>
-                                       <a href="javascript:void(0)" class="active">
-                                        <i class="fa-solid fa-star"></i>
-                                       </a>
+                                        <a href="javascript:void(0)" class="active">
+                                            <i class="fa-solid fa-star"></i>
+                                        </a>
                                     </p>
                                 </div>
                             </div>
@@ -261,14 +263,14 @@
                                     <p>
                                         <span>Dear Team, kindly review the attached quarterly report before our meeting at 2
                                             PM tomorrow. Your insights are appreciated.</span>
-                                       <a href="javascript:void(0)">
-                                        <i class="fa-solid fa-star"></i>
-                                       </a>
+                                        <a href="javascript:void(0)">
+                                            <i class="fa-solid fa-star"></i>
+                                        </a>
                                     </p>
                                 </div>
                             </div>
                         </div>
-                       
+
                     </div>
                 </div>
                 <div class="mail-tab-content" id="Starred">
@@ -320,9 +322,9 @@
                                     <p>
                                         <span>Dear Team, kindly review the attached quarterly report before our meeting at 2
                                             PM tomorrow. Your insights are appreciated.</span>
-                                       <a href="javascript:void(0)" class="active">
-                                        <i class="fa-solid fa-star"></i>
-                                       </a>
+                                        <a href="javascript:void(0)" class="active">
+                                            <i class="fa-solid fa-star"></i>
+                                        </a>
                                     </p>
                                 </div>
                             </div>
@@ -332,7 +334,52 @@
             </div>
         </div>
         <div class="mail-detail-container">
-            <div class="mail-detail-modal"></div>
+            <div class="mail-detail-modal">
+                <div class="mail-detail-modal-head">
+                    <div class="mail-detail-modal-head-first">
+                        <img src="{{ asset('Asset/Admin/img/men-avatar.jpg') }}" alt="">
+                        <div>
+                            <h4>Muhammad Saim</h4>
+                            <span>msaimkzmsk2008@gmail.com</span>
+                        </div>
+                    </div>
+                    <div class="mail-detail-modal-head-second">
+                        <button class="btn" id="Modal-dropdown-btn">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </button>
+                        <ul class="modal-mail-dropdown" id="ModalDropDown">
+                            <li class="drop-item">
+                                <a href="#">
+                                    <i class="fa-solid fa-star"></i>
+                                    <span class="modal-mail-text">Starred</span>
+                                </a>
+                            </li>
+                            <li class="drop-item">
+
+                                <a href="#">
+                                    <i class="fa-solid fa-trash-can"></i>
+                                    <span class="modal-mail-text">Delete</span>
+                                </a>
+                            </li>
+
+                        </ul>
+
+                        <button class="btn close-btn" id="Modal-Close-btn">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="mail-detail-modal-body">
+                    <h3>Greetings Mr Saim 🖐,</h3>
+                    <p>
+                        We're excited to invite you to our upcoming webinar, "Navigating Future Trends," where industry
+                        experts will share strategic insights to help you stay ahead in an ever-evolving landscape. Join us
+                        on [Date] at [Time] for an engaging session that promises to provide actionable knowledge and
+                        valuable perspectives.
+                    </p>
+                </div>
+
+            </div>
         </div>
     </div>
 @endsection

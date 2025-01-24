@@ -3202,7 +3202,7 @@ footer p {
     color: #F4A742;
 }
 
-.mail-detail-container{
+.mail-detail-container {
     width: 100vw;
     height: 100vh;
     position: fixed;
@@ -3212,12 +3212,158 @@ footer p {
     display: none;
     justify-content: flex-end;
     background-color: #00000085;
-    
+    overflow: hidden;
+    transition:  0.5s linear;
+
+
 }
-.mail-detail-modal{
+
+.mail-detail-container.active {
+    display: flex;
+}
+
+.mail-detail-modal {
     width: 57%;
     height: 100%;
     background-color: #fff;
+    position: absolute;
+    right: -60%;
+    transition:  3s linear;
+}
+
+.mail-detail-modal.active {
+    transition:  1s linear;
+    right: 0;
+}
+
+.mail-detail-modal-head {
+    display: flex;
+    padding: 20px 20px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e2e6f1;
+
+}
+
+.mail-detail-modal-head-first {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.mail-detail-modal-head-first img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.mail-detail-modal-head-first div h4 {
+    font-family: MontMedium;
+    font-size: 16px;
+    color: var(--text);
+    margin: 0px;
+}
+
+.mail-detail-modal-head-first div span {
+    font-family: MontMedium;
+    font-size: 12px;
+    color: #a3b1fe;
+
+}
+
+.mail-detail-modal-head-second {
+    display: flex;
+    gap: 10px;
+    position: relative;
+}
+
+.mail-detail-modal-head-second button {
+    background-color: #f5f7fa;
+    font-family: MontSemiBold;
+    color: var(--text);
+    padding-inline: 15px;
+    font-size: 16px;
+}
+
+.mail-detail-modal-head-second button:hover {
+    background-color: #f5f7fa;
+    color: var(--text);
+}
+
+.mail-detail-modal-head-second #Modal-dropdown-btn:active,
+.mail-detail-modal-head-second #Modal-Close-btn:active {
+    background-color: #f5f7fa;
+    color: var(--text);
+    border-color: #f5f7fa;
+    outline-color: #f5f7fa;
+}
+
+.modal-mail-dropdown {
+    position: absolute;
+    right: 10px;
+    bottom: -90px;
+    background-color: #fff;
+    margin: 0;
+    padding-left: 0;
+    border-radius: 5px;
+    display: none;
+    border: 1px solid #E4ECF2;
+    transition: 0.5s;
+}
+
+.modal-mail-dropdown.active {
+    display: block;
+}
+
+.modal-mail-dropdown .drop-item {
+    list-style: none;
+    width: 150px;
+    padding: 10px 0px;
+    padding-left: 20px;
+    transition: 0.2s;
+}
+
+.modal-mail-dropdown .drop-item:hover {
+    background-color: #546efe13;
+}
+
+.modal-mail-dropdown .drop-item a {
+    text-decoration: none;
+    color: #a3b1fe;
+    font-family: MontRegular;
+    font-size: 15px;
+    transition: 0.5s;
+    display: flex;
+    gap: 7px;
+    align-items: center;
+}
+
+.modal-mail-dropdown .drop-item a i {
+    font-size: 13px;
+}
+
+.modal-mail-dropdown .drop-item:hover a {
+    color: #546dfe;
+}
+
+
+.mail-detail-modal-body {
+    width: 100%;
+    padding: 40px 20px;
+}
+
+.mail-detail-modal-body h3 {
+    font-family: MontMedium;
+    font-size: 16px;
+    color: var(--text);
+    margin: 0px;
+}
+
+.mail-detail-modal-body p {
+    font-family: MontMedium;
+    font-size: 14px;
+    color: #a3b1fe;
+    margin: 40px 0px;
 }
 
 /************************************************************************************************************

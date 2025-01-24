@@ -7,13 +7,13 @@ function dropdown() {
 
     mailbtn.forEach(button => {
         button.addEventListener("click", function (e) {
-          
 
-                const id = this.dataset.toggle;
 
-                this.classList.toggle('active');
-                document.getElementById(id).classList.toggle('active');
-            
+            const id = this.dataset.toggle;
+
+            this.classList.toggle('active');
+            document.getElementById(id).classList.toggle('active');
+
         });
     })
 
@@ -48,3 +48,46 @@ function Tab() {
 }
 
 Tab();
+
+function ModalDropDown() {
+    let ModalDropDownBtn = document.querySelector("#Modal-dropdown-btn");
+    let ModalDropDown = document.querySelector("#ModalDropDown");
+
+    ModalDropDownBtn.addEventListener("click", function (e) {
+        ModalDropDown.classList.toggle("active");
+        e.stopPropagation();
+    });
+
+    document.addEventListener("click", function (e) {
+        if (!ModalDropDown.contains(e.target) && !ModalDropDownBtn.contains(e.target)) {
+            ModalDropDown.classList.remove("active");
+        }
+    });
+}
+ModalDropDown()
+
+function MailDetailModal() {
+    const buttons = document.querySelectorAll('.mail-username');
+    const modalContainer = document.querySelector('.mail-detail-container');
+    const modal = document.querySelector('.mail-detail-modal');
+
+    buttons.forEach(button => {
+        button.addEventListener('click', function () {
+
+
+            modalContainer.classList.add('active');
+            modal.classList.add('active');
+        });
+    });
+
+    modalContainer.addEventListener('click', function () {
+
+
+        modalContainer.classList.remove('active');
+        modal.classList.remove('active');
+    });
+    
+
+}
+
+MailDetailModal();
