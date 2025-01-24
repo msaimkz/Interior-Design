@@ -71,23 +71,30 @@ function MailDetailModal() {
     const modalContainer = document.querySelector('.mail-detail-container');
     const modal = document.querySelector('.mail-detail-modal');
 
+   
     buttons.forEach(button => {
-        button.addEventListener('click', function () {
-
-
+        button.addEventListener('click', function (event) {
+            event.stopPropagation(); 
             modalContainer.classList.add('active');
             modal.classList.add('active');
         });
     });
 
+    
     modalContainer.addEventListener('click', function () {
 
-
-        modalContainer.classList.remove('active');
         modal.classList.remove('active');
-    });
-    
 
+        setTimeout(() => {
+            modalContainer.classList.remove('active');
+        }, 50);
+    });
+
+   
+    modal.addEventListener('click', function (event) {
+        event.stopPropagation();
+    });
 }
+
 
 MailDetailModal();
