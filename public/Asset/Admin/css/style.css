@@ -3653,6 +3653,15 @@ footer p {
     border-radius: 7px;
 }
 
+.support-chat-tab {
+    display: none;
+}
+
+
+.support-chat-tab.active {
+    display: block;
+}
+
 .support-chat-tab-head {
     width: 100%;
     display: flex;
@@ -3787,11 +3796,92 @@ footer p {
     color: #fff;
 
 }
-.support-chat-tab-footer{
+
+.support-chat-tab-footer {
     width: 100%;
     background-color: #fff;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    box-shadow: 0 .25rem 1rem #0000001a;
+    position: relative;
+
+
+}
+
+.support-chat-tab-footer form {
+    display: flex;
     gap: 30px;
+    align-items: center;
+}
+
+.support-chat-tab-footer-emoji {
+    padding: 10px 15px;
+    background-color: #0cd7b1;
+    display: flex;
+    border-radius: 7px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+}
+
+.support-chat-tab-footer-emoji i {
+    color: #fff;
+    font-size: 18px;
+}
+
+.support-chat-tab-footer form input {
+
+    width: 500px;
+    font-family: MontMedium;
+    font-size: 13px;
+    color: #1a2638;
+    padding: 9px 10px;
+    border-radius: 5px;
+    border: 1px solid #e2e6f1;
+    transition: all 0.5s ease-in-out;
+}
+
+.support-chat-tab-footer form input:focus {
+    border-color: rgb(84, 109, 254);
+    box-shadow: 0 0 10px rgba(84, 109, 254, 0.5);
+    outline: none;
+}
+
+.support-chat-tab-footer-send {
+    padding: 8px 15px;
+    background-color: #546dfe;
+    display: flex;
+    border-radius: 7px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    outline-color: #546dfe;
+    border-color: #546dfe;
+}
+
+.support-chat-tab-footer-send i {
+    color: #fff;
+    font-size: 16px;
+}
+
+.support-start-chat-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-direction: column;
+}
+
+.support-start-chat-body p {
+    width: 450px;
+    font-family: MontSemiBold;
+    font-size: 16px;
+    color: #1a2638;
+    margin: 0;
 }
 
 /************************************************************************************************************

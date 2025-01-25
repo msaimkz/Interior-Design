@@ -38,6 +38,8 @@
 
     {{-- Custom CSS LINK  --}}
 
+    @yield('css')
+
 </head>
 
 <body>

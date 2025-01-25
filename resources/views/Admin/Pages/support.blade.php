@@ -1,5 +1,10 @@
 @extends('Admin.Layout.master')
 
+@section('css')
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.2/emojionearea.min.css"
+        integrity="sha512-vEia6TQGr3FqC6h55/NdU3QSM5XR6HSl5fW71QTKrgeER98LIMGwymBVM867C1XHIkYD9nMTfWK2A0xcodKHNA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+@endsection
 @section('content')
     <div class="content">
         <div class="title mt-3">
@@ -206,7 +211,7 @@
                 </div>
             </div>
             <div class="support-right-container">
-                <div class="support-chat-tab">
+                <div class="support-chat-tab" id="ChatTab">
                     <div class="support-chat-tab-head">
                         <img src="{{ asset('Asset/Admin/img/men-avatar.jpg') }}" alt="">
                         <h3>Muhammad Saim</h3>
@@ -223,7 +228,7 @@
                                             <span>11:53PM</span>
                                         </div>
                                         <div class="chat-item-about-msg">
-                                            <p >
+                                            <p>
                                                 Not too bad, just chilling. Have any exciting plans for the weekend?
                                             </p>
                                         </div>
@@ -238,7 +243,7 @@
                                             <span>11:53PM</span>
                                         </div>
                                         <div class="chat-item-about-msg">
-                                            <p >
+                                            <p>
                                                 Hey there! 😊 How's it going?
                                             </p>
                                         </div>
@@ -258,7 +263,7 @@
                                             <span>11:53PM</span>
                                         </div>
                                         <div class="chat-item-about-msg">
-                                            <p >
+                                            <p>
                                                 Not too bad, just chilling. Have any exciting plans for the weekend?
                                             </p>
                                         </div>
@@ -273,7 +278,7 @@
                                             <span>11:53PM</span>
                                         </div>
                                         <div class="chat-item-about-msg">
-                                            <p >
+                                            <p>
                                                 Hey there! 😊 How's it going?
                                             </p>
                                         </div>
@@ -285,17 +290,26 @@
 
                     </div>
                     <div class="support-chat-tab-footer">
-                        <div class="support-chat-tab-footer-emoji">
+                        <div class="support-chat-tab-footer-emoji" id="emojiButton">
                             <i class="fa-regular fa-face-laugh-wink"></i>
                         </div>
                         <form name="SupportMsgForm" id="SupportMsgForm">
                             <input type="text" name="msg" id="msg" placeholder="Type your message here...">
-                            <div class="support-chat-tab-footer-send">
+                            <button type="submit" class="support-chat-tab-footer-send">
                                 <i class="ri-send-plane-2-line"></i>
-                            </div>
+                            </button>
                         </form>
 
                     </div>
+                </div>
+                <div class="support-chat-tab active" id="StartChatTab">
+                    <div class="support-start-chat-body">
+                        <img src="{{ asset('Asset/Admin/img/chat-background.jpg') }}" alt="">
+                        <p>
+                            Hey! 👋 You have no chats yet. Start a conversation by selecting a contact and saying hello!
+                        </p>
+                    </div>
+
                 </div>
 
             </div>
@@ -304,5 +318,10 @@
 @endsection
 
 @section('script')
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.2/emojionearea.min.js"
+        integrity="sha512-hkvXFLlESjeYENO4CNi69z3A1puvONQV5Uh+G4TUDayZxSLyic5Kba9hhuiNLbHqdnKNMk2PxXKm0v7KDnWkYA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <script src="{{ asset('Asset/Admin/js/support.js') }}"></script>
 @endsection
