@@ -14,19 +14,15 @@
         <div class="support-main-container">
             <div class="support-left-container">
                 <div class="support-left-head">
-                    <div class="support-left-head-child active">
+                    <div class="support-left-head-child active" data-toggle="CustomerTab">
                         <h3>Customers</h3>
                     </div>
-                    <div class="support-left-head-child">
+                    <div class="support-left-head-child" data-toggle="DesignerTab">
                         <h3>Designers</h3>
                     </div>
-                    <div class="support-left-head-child">
-                        <h3>Contacts</h3>
-                    </div>
-
                 </div>
                 <div class="support-left-body">
-                    <div class="support-left-content-tab">
+                    <div class="support-left-content-tab active" id="CustomerTab">
                         <div class="support-left-body-child">
                             <div class="support-left-body-head">
                                 <h3>Active Chats</h3>
@@ -116,7 +112,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="support-left-content-tab">
+                    <div class="support-left-content-tab" id="DesignerTab">
                         <div class="support-left-body-child">
                             <div class="support-left-body-head">
                                 <h3>Active Chats</h3>
@@ -127,7 +123,7 @@
                                     <img src="{{ asset('Asset/Admin/img/men-avatar.jpg') }}" alt="">
                                     <div class="support-left-body-chart-item-contact">
                                         <div>
-                                            <h3 class="name">Muhammad Rahim</h3>
+                                            <h3 class="name">Muhammad Saim</h3>
                                             <span>rahim@gmail.com</span>
                                         </div>
                                         <span>1:30PM</span>
@@ -209,7 +205,104 @@
 
                 </div>
             </div>
-            <div class="support-right-container"></div>
+            <div class="support-right-container">
+                <div class="support-chat-tab">
+                    <div class="support-chat-tab-head">
+                        <img src="{{ asset('Asset/Admin/img/men-avatar.jpg') }}" alt="">
+                        <h3>Muhammad Saim</h3>
+                    </div>
+                    <div class="support-chat-tab-body">
+                        <div class="support-chat-tab-group">
+                            <span class="chat-badge">Today</span>
+                            <div class="chat-group">
+                                <div class="chat-item" id="SenderMsg">
+                                    <img src="{{ asset('Asset/Admin/img/men-avatar.jpg') }}" alt="">
+                                    <div class="chat-item-about">
+                                        <div class="chat-item-about-name">
+                                            <h3>Saim</h3>
+                                            <span>11:53PM</span>
+                                        </div>
+                                        <div class="chat-item-about-msg">
+                                            <p >
+                                                Not too bad, just chilling. Have any exciting plans for the weekend?
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="chat-item" id="ReciverMsg">
+                                    <img src="{{ asset('Asset/Admin/img/men-avatar.jpg') }}" alt="">
+                                    <div class="chat-item-about">
+                                        <div class="chat-item-about-name">
+                                            <h3>Saim</h3>
+                                            <span>11:53PM</span>
+                                        </div>
+                                        <div class="chat-item-about-msg">
+                                            <p >
+                                                Hey there! 😊 How's it going?
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="support-chat-tab-group">
+                            <span class="chat-badge">Yesterday</span>
+                            <div class="chat-group">
+                                <div class="chat-item" id="SenderMsg">
+                                    <img src="{{ asset('Asset/Admin/img/men-avatar.jpg') }}" alt="">
+                                    <div class="chat-item-about">
+                                        <div class="chat-item-about-name">
+                                            <h3>Saim</h3>
+                                            <span>11:53PM</span>
+                                        </div>
+                                        <div class="chat-item-about-msg">
+                                            <p >
+                                                Not too bad, just chilling. Have any exciting plans for the weekend?
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="chat-item" id="ReciverMsg">
+                                    <img src="{{ asset('Asset/Admin/img/men-avatar.jpg') }}" alt="">
+                                    <div class="chat-item-about">
+                                        <div class="chat-item-about-name">
+                                            <h3>Saim</h3>
+                                            <span>11:53PM</span>
+                                        </div>
+                                        <div class="chat-item-about-msg">
+                                            <p >
+                                                Hey there! 😊 How's it going?
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="support-chat-tab-footer">
+                        <div class="support-chat-tab-footer-emoji">
+                            <i class="fa-regular fa-face-laugh-wink"></i>
+                        </div>
+                        <form name="SupportMsgForm" id="SupportMsgForm">
+                            <input type="text" name="msg" id="msg" placeholder="Type your message here...">
+                            <div class="support-chat-tab-footer-send">
+                                <i class="ri-send-plane-2-line"></i>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+
+            </div>
         </div>
     </div>
+@endsection
+
+@section('script')
+    <script src="{{ asset('Asset/Admin/js/support.js') }}"></script>
 @endsection

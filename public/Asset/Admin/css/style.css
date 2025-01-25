@@ -3495,10 +3495,8 @@ footer p {
 .support-left-container {
     width: 40%;
     min-height: 100px;
-    max-height: 600px;
     background-color: #fff;
     border-radius: 7px;
-    overflow-y: hidden;
 }
 
 .support-left-container:hover {
@@ -3527,7 +3525,7 @@ footer p {
 }
 
 .support-left-head-child {
-    width: 200px;
+    width: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -3542,7 +3540,7 @@ footer p {
 
 .support-left-head-child h3 {
     font-family: MontMedium;
-    font-size: 18px;
+    font-size: 20px;
     color: var(--text);
     margin: 0px;
     transition: 0.5s ease;
@@ -3556,6 +3554,29 @@ footer p {
     color: #546dfe;
 }
 
+.support-left-body {
+    max-height: 500px;
+    overflow-y: hidden;
+
+}
+
+.support-left-body:hover {
+    overflow-y: scroll;
+}
+
+.support-left-body::-webkit-scrollbar {
+    width: 6px;
+}
+
+.support-left-body::-webkit-scrollbar-thumb {
+    background-color: var(--main);
+    border-radius: 10px;
+}
+
+.support-left-body::-webkit-scrollbar-thumb:hover {
+    background-color: var(--main);
+}
+
 .support-left-body-head {
     padding: 20px;
 }
@@ -3566,6 +3587,14 @@ footer p {
     color: #a3b1fe;
     margin: 0px;
     text-transform: uppercase;
+}
+
+.support-left-content-tab {
+    display: none;
+}
+
+.support-left-content-tab.active {
+    display: block;
 }
 
 .support-left-body-child:nth-child(2) {
@@ -3622,6 +3651,147 @@ footer p {
     min-height: 100px;
     background-color: #fff;
     border-radius: 7px;
+}
+
+.support-chat-tab-head {
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 1px solid #E4ECF2;
+
+}
+
+.support-chat-tab-head img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.support-chat-tab-head h3 {
+    font-family: MontSemiBold;
+    font-size: 18px;
+    color: var(--text);
+    margin: 0px;
+}
+
+.support-chat-tab-body {
+    width: 100%;
+    min-height: 100px;
+    max-height: 500px;
+    overflow-y: hidden;
+}
+
+.support-chat-tab-body:hover {
+    overflow-y: scroll;
+}
+
+.support-chat-tab-body::-webkit-scrollbar {
+    width: 6px;
+}
+
+.support-chat-tab-body::-webkit-scrollbar-thumb {
+    background-color: var(--main);
+    border-radius: 10px;
+}
+
+.support-chat-tab-body::-webkit-scrollbar-thumb:hover {
+    background-color: var(--main);
+}
+
+.support-chat-tab-group {
+    width: 100%;
+    padding: 30px;
+    text-align: center;
+
+}
+
+.chat-badge {
+    padding: 4px 15px;
+    border-radius: 5px;
+    color: var(--text);
+    font-family: MontSemiBold;
+    font-size: 12px;
+    background-color: #EAEDFF;
+}
+
+.chat-group {
+    width: 100%;
+    margin-top: 30px;
+    padding-inline: 30px;
+}
+
+.chat-item {
+    display: flex;
+    gap: 20px;
+    text-align: left;
+    margin-top: 50px;
+}
+
+.chat-item#ReciverMsg {
+    flex-direction: row-reverse;
+}
+
+.chat-item img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.chat-item-about .chat-item-about-name {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.chat-item#ReciverMsg .chat-item-about .chat-item-about-name {
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+}
+
+
+.chat-item-about .chat-item-about-name h3 {
+    font-family: MontSemiBold;
+    font-size: 14px;
+    color: var(--text);
+    margin: 0px;
+}
+
+.chat-item-about .chat-item-about-name span {
+    font-family: MontSemiBold;
+    font-size: 14px;
+    color: #a3b1fe;
+}
+
+.chat-item-about .chat-item-about-msg {
+    border-radius: 4px;
+    padding: 20px 10px;
+    margin-top: 10px;
+    background-color: #F5F7FA;
+}
+
+.chat-item-about .chat-item-about-msg p {
+    font-family: MontMedium;
+    font-size: 13px;
+    color: var(--text);
+    margin: 0px;
+}
+
+.chat-item#ReciverMsg .chat-item-about .chat-item-about-msg {
+    background-color: #546dfe;
+
+}
+
+.chat-item#ReciverMsg .chat-item-about .chat-item-about-msg p {
+    color: #fff;
+
+}
+.support-chat-tab-footer{
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    gap: 30px;
 }
 
 /************************************************************************************************************

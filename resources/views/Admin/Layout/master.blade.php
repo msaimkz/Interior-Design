@@ -15,6 +15,14 @@
 
     {{-- font Awesome CDN  --}}
 
+    {{-- Remis Icon CDN  --}}
+
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+
+    {{-- Remis Icon CDN  --}}
+
+
 
     {{-- Bootstarp CDN LINK  --}}
 
@@ -36,9 +44,9 @@
 
     <div class="main">
 
-    <div class="blur-background">
+        <div class="blur-background">
 
-    </div>
+        </div>
 
 
         {{-- SideBar --}}
@@ -65,10 +73,10 @@
                     <ul class="sub-link-container">
                         <li class="sub-link-contian">
 
-                            <a href="{{  route('Admin.dashboard.index') }}">Sales Overview</a>
+                            <a href="{{ route('Admin.dashboard.index') }}">Sales Overview</a>
                         </li>
                         <li class="sub-link-contian">
-                            <a href="{{ route('Admin.dashboard.user')  }}">User Statistics</a>
+                            <a href="{{ route('Admin.dashboard.user') }}">User Statistics</a>
                         </li>
                         <li class="sub-link-contian">
                             <a href="{{ route('Admin.dashboard.sale') }}">Products Analytics</a>
@@ -330,7 +338,7 @@
             @yield('content')
 
 
-          
+
             {{-- Footer  --}}
 
             <footer>
@@ -357,7 +365,7 @@
     {{-- Apex Chart CDN Script  --}}
 
 
-  
+
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 
@@ -369,7 +377,7 @@
     {{-- Custom  CDN  Script --}}
 
     {{-- Jquery CDN Script --}}
-    
+
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
     {{-- Jquery CDN Script --}}
