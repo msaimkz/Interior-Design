@@ -555,7 +555,7 @@ body {
 
 .profile-dropdown {
     position: absolute;
-    bottom: -160px;
+    bottom: -190px;
     background-color: #fff;
     margin: 0;
     padding-left: 0;
@@ -4178,6 +4178,7 @@ footer p {
     display: flex;
     gap: 20px;
     align-items: center;
+    position: relative;
 }
 
 .admin-main-table-header-sub form {
@@ -4252,6 +4253,12 @@ footer p {
 
     font-size: 16px;
     color: var(--text);
+}
+.drop-delete-btn{
+    display: none;
+}
+.drop-delete-btn.delActive{
+    display: block;
 }
 
 .admin-main-table-body {
@@ -4412,20 +4419,46 @@ footer p {
     color: var(--text);
 
 }
-.table-footer-pagination .pagination .page-item .page-link:hover{
+
+.table-footer-pagination .pagination .page-item .page-link:hover {
     color: #546dfe;
 
 }
-.table-footer-pagination .pagination .page-item .page-link:focus{
+
+.table-footer-pagination .pagination .page-item .page-link:focus {
     box-shadow: none;
 
 
 }
-.table-footer-pagination .pagination .page-item.active .page-link{
+
+.table-footer-pagination .pagination .page-item.active .page-link {
     background-color: #546dfe;
     color: #fff;
 }
 
+.export-dropdown {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.export-dropdown {
+    display: none;
+    position: absolute;
+    top: 120px;
+    right: 160px;
+}
+
+.admin-main-table-header-sub .dropdown-item:hover {
+    color: #fff;
+    background-color: #546dfe;
+
+}
+
+.admin-main-table-header-sub .dropdown-item:active {
+    color: #fff;
+    background-color: #546dfe;
+}
 /************************************************************************************************************
 ************************************ Admin Main Table CSS ************************************************
 ************************************************************************************************************/

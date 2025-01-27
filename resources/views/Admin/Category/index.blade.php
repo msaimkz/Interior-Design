@@ -25,9 +25,25 @@
                             <i class="fa-solid fa-circle-plus"></i>
                             <span>Add Category</span>
                         </a>
-                        <button class="admin-main-table-header-more-button">
+                        <button class="admin-main-table-header-more-button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
                             <i class="fa-solid fa-ellipsis-vertical"></i>
                         </button>
+                        <ul class="dropdown-menu" id="dropdown1" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" id="ShowCheckBoxBtn" href="javascript:void(0)">Select</a></li>
+                            <li><a class="dropdown-item drop-delete-btn" id="ShowCheckBoxBtn" href="javascript:void(0)">Delete</a></li>
+                            <li>
+                                <a class="dropdown-item" href="#" id="exportButton">
+                                    <span>Export</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="dropdown-menu export-dropdown" id="dropdown2">
+                            <li><a class="dropdown-item" href="#">Excel</a></li>
+                            <li><a class="dropdown-item" href="#">CSV</a></li>
+                            <li><a class="dropdown-item" href="#">PDF</a></li>
+                        </ul>
+
                     </div>
                 </div>
                 <div class="admin-main-table-body">
@@ -48,7 +64,7 @@
                             <tr>
                                 <td class="CheckInputTbody">
                                     <input type="checkbox" class="form-check-input" name="MultipleDeleteCheck"
-                                        id="MultipleDeleteCheck">
+                                        id="MultipleDeleteCheck" value="1">
                                 </td>
                                 <td>
                                     01
@@ -79,7 +95,7 @@
                             <tr>
                                 <td class="CheckInputTbody">
                                     <input type="checkbox" class="form-check-input" name="MultipleDeleteCheck"
-                                        id="MultipleDeleteCheck">
+                                        id="MultipleDeleteCheck" value="2">
                                 </td>
                                 <td>
                                     01
@@ -123,23 +139,27 @@
                     <div class="table-footer-pagination">
                         <nav aria-label="...">
                             <ul class="pagination">
-                              <li class="page-item disabled">
-                                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
-                              </li>
-                              <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                              <li class="page-item " aria-current="page">
-                                <a class="page-link" href="#">2</a>
-                              </li>
-                              <li class="page-item"><a class="page-link" href="#">3</a></li>
-                              <li class="page-item">
-                                <a class="page-link" href="#">Next</a>
-                              </li>
+                                <li class="page-item disabled">
+                                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                                </li>
+                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item " aria-current="page">
+                                    <a class="page-link" href="#">2</a>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">Next</a>
+                                </li>
                             </ul>
-                          </nav>
+                        </nav>
                     </div>
                 </div>
 
             </div>
         </div>
     </div>
+@endsection
+
+@section('script')
+    <script src="{{ asset('Asset/Admin/js/Category/index.js') }}"></script>
 @endsection
