@@ -5,6 +5,7 @@ use App\Http\Controllers\Admin\AdminMailController;
 use App\Http\Controllers\Admin\AdminProfileController;
 use App\Http\Controllers\Admin\AdminSettingController;
 use App\Http\Controllers\Admin\AdminSupportController;
+use App\Http\Controllers\Admin\CategoryController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -44,6 +45,11 @@ Route::get('/Admin/Dashboard/All-Mails',[AdminMailController::class,'index'])->n
 
 // Admin Support Routes
 Route::get('/Admin/Dashboard/Support',[AdminSupportController::class,'index'])->name('Admin.support');
+
+
+
+// Admin Category Routes
+Route::get('/Admin/Dashboard/All-Categories',[CategoryController::class,'index'])->name('Admin.category');
 
 
 

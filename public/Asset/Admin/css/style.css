@@ -3920,14 +3920,14 @@ footer p {
 @media screen and (max-width: 1280px) {
 
 
-    .support-chat-tab-footer form  {
+    .support-chat-tab-footer form {
         gap: 10px;
     }
 
     .support-chat-tab-footer form input {
         width: 410px;
     }
-    
+
 }
 
 @media screen and (max-width: 1150px) {
@@ -3941,7 +3941,7 @@ footer p {
         width: 98%;
     }
 
-    .support-left-body{
+    .support-left-body {
         max-height: 700px;
     }
 
@@ -3962,7 +3962,7 @@ footer p {
     }
 
     .support-chat-tab {
-       min-height: 50vh;
+        min-height: 50vh;
     }
 
     .support-chat-tab-body {
@@ -4004,10 +4004,11 @@ footer p {
 }
 
 @media screen and (max-width:600px) {
-    .support-chat-tab-footer form input{
+    .support-chat-tab-footer form input {
         width: 330px;
     }
-    .support-chat-tab-footer form{
+
+    .support-chat-tab-footer form {
         gap: 10px;
     }
 }
@@ -4019,34 +4020,43 @@ footer p {
         min-height: 100vh;
     }
 
-    .support-left-head-child.active h3{
+    .support-left-head-child.active h3 {
         font-size: 18px;
     }
-    .support-left-body-chart-item .support-left-body-chart-item-contact div h3{
+
+    .support-left-body-chart-item .support-left-body-chart-item-contact div h3 {
         font-size: 13px;
     }
-    .support-left-body-chart-item .support-left-body-chart-item-contact div span{
+
+    .support-left-body-chart-item .support-left-body-chart-item-contact div span {
         font-size: 11px;
     }
-    .support-chat-tab-head div h3{
+
+    .support-chat-tab-head div h3 {
         font-size: 15px;
     }
-    .chat-item-about .chat-item-about-msg p{
+
+    .chat-item-about .chat-item-about-msg p {
         font-size: 11px;
     }
-    .support-chat-tab-footer form{
+
+    .support-chat-tab-footer form {
         gap: 10px;
     }
-    .support-chat-tab-footer form input{
+
+    .support-chat-tab-footer form input {
         width: 230px;
     }
-    .support-chat-tab-footer-send{
+
+    .support-chat-tab-footer-send {
         padding: 8px 10px;
     }
-    .support-chat-tab-footer-send i{
+
+    .support-chat-tab-footer-send i {
         font-size: 14px;
     }
-    .support-chat-tab-footer-emoji{
+
+    .support-chat-tab-footer-emoji {
         padding: 10px;
     }
 
@@ -4057,14 +4067,17 @@ footer p {
     .support-main-container {
         min-height: 140vh;
     }
-    .support-left-body{
+
+    .support-left-body {
         max-height: 100vh;
     }
-    .support-chat-tab-footer form input{
+
+    .support-chat-tab-footer form input {
         width: 180px;
         font-size: 10px;
     }
-    .support-chat-tab-footer-send{
+
+    .support-chat-tab-footer-send {
         padding: 8px;
     }
 }
@@ -4074,48 +4087,56 @@ footer p {
     .support-main-container {
         min-height: 120vh;
     }
-    .support-left-body{
+
+    .support-left-body {
         max-height: 100vh;
     }
-    .support-chat-tab-footer form input{
+
+    .support-chat-tab-footer form input {
         width: 180px;
         font-size: 10px;
     }
-    .support-chat-tab-footer-send{
+
+    .support-chat-tab-footer-send {
         padding: 8px;
     }
-    
+
 }
 
 @media screen and (max-width:350px) {
 
-    .support-left-body-chart-item{
+    .support-left-body-chart-item {
         gap: 10px;
     }
-    .support-left-body-chart-item .support-left-body-chart-item-contact div h3{
+
+    .support-left-body-chart-item .support-left-body-chart-item-contact div h3 {
         font-size: 11px;
     }
-    .support-left-body-chart-item .support-left-body-chart-item-contact div span{
+
+    .support-left-body-chart-item .support-left-body-chart-item-contact div span {
         font-size: 9px;
     }
 
-    .support-chat-tab-head div{
+    .support-chat-tab-head div {
         gap: 10px;
     }
 
-    .support-chat-tab-head div h3{
+    .support-chat-tab-head div h3 {
         font-size: 12px;
     }
 
-    .chat-item-about .chat-item-about-msg{
+    .chat-item-about .chat-item-about-msg {
         width: 150px;
     }
-    .chat-item-about .chat-item-about-msg p{
+
+    .chat-item-about .chat-item-about-msg p {
         font-size: 10px;
     }
+
     .support-chat-tab-footer-emoji {
         padding: 8px;
     }
+
     .support-chat-tab-footer form input {
         width: 160px;
         font-size: 10px;
@@ -4125,6 +4146,122 @@ footer p {
 
 /************************************************************************************************************
 ************************************ Support Page CSS ************************************************
+************************************************************************************************************/
+
+/************************************************************************************************************
+************************************ Admin Main Table CSS ************************************************
+************************************************************************************************************/
+
+.admin-main-table{
+    width: 100%;
+    border-radius: 5px;
+    background-color: #fff;
+}
+.admin-main-table-header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #e2e6f1;
+}
+.admin-main-table-header h3{
+    font-family: MontMedium;
+    font-size: 18px;
+    color: var(--text);
+    margin: 0px;
+}
+
+.admin-main-table-header-sub{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.admin-main-table-header-sub form{
+    position: relative;
+}
+.admin-main-table-header-sub form input{
+    width: 330px;
+    font-family: MontMedium;
+    font-size: 12px;
+    color: #1a2638;
+    padding: 9px 10px;
+    border-radius: 5px;
+    border: 1px solid #e2e6f1;
+    transition: all 0.5s ease-in-out;
+}
+
+.admin-main-table-header-sub form input:focus {
+    border-color: rgb(84, 109, 254);
+    box-shadow: 0 0 10px rgba(84, 109, 254, 0.5);
+    outline: none;
+}
+.admin-main-table-header-sub form a{
+    text-decoration: none;
+    color: #CAD2DD;
+    position: absolute;
+    top: 6px;
+    right: 10px;
+}
+.admin-main-table-header-sub form a i{
+    font-size: 14px;
+}
+
+.admin-main-table-header-button{
+    text-decoration: none;
+    padding: 10px 18px;
+    background-color: #546dfe;
+    color: #fff;
+    font-family: MontSemiBold;
+    font-size: 14px;
+    border-radius: 5px;
+    display: flex;
+    gap: 7px;
+    align-items: center;
+    transition: 0.5s ease;
+}
+.admin-main-table-header-button:hover{
+    background-color: #546efed0;
+    color: #fff;
+}
+.admin-main-table-header-button i{
+    font-size: 12px;
+}
+.admin-main-table-header-more-button{
+    padding: 10px 15px;
+    background-color: #EAEDFF;
+    display: flex;
+    border-radius: 7px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    outline-color: #EAEDFF;
+    border-color: #EAEDFF;
+}
+.admin-main-table-header-more-button i{
+
+    font-size: 14px;
+    color: var(--text);
+}
+
+/************************************************************************************************************
+************************************ Admin Main Table CSS ************************************************
+************************************************************************************************************/
+
+
+/************************************************************************************************************
+************************************ Category Index Page CSS ************************************************
+************************************************************************************************************/
+
+.category-main-container {
+    width: 100%;
+    margin-top: 30px;
+
+}
+
+
+/************************************************************************************************************
+************************************ Category Index Page CSS ************************************************
 ************************************************************************************************************/
 
 /************************************************************************************************************

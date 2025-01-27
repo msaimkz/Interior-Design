@@ -88,7 +88,7 @@
                 <span class="link-title">Products</span>
 
                 <li class="link-contain">
-                    <a href="#">
+                    <a href="{{ route('Admin.category') }}">
                         <span class="link-icon"><i class="fa-solid fa-layer-group"></i></span>
                         <span class="link-text">Category</span>
                     </a>
