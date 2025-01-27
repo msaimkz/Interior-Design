@@ -4152,12 +4152,13 @@ footer p {
 ************************************ Admin Main Table CSS ************************************************
 ************************************************************************************************************/
 
-.admin-main-table{
+.admin-main-table {
     width: 100%;
     border-radius: 5px;
     background-color: #fff;
 }
-.admin-main-table-header{
+
+.admin-main-table-header {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -4165,22 +4166,25 @@ footer p {
     padding: 20px;
     border-bottom: 1px solid #e2e6f1;
 }
-.admin-main-table-header h3{
+
+.admin-main-table-header h3 {
     font-family: MontMedium;
     font-size: 18px;
     color: var(--text);
     margin: 0px;
 }
 
-.admin-main-table-header-sub{
+.admin-main-table-header-sub {
     display: flex;
     gap: 20px;
     align-items: center;
 }
-.admin-main-table-header-sub form{
+
+.admin-main-table-header-sub form {
     position: relative;
 }
-.admin-main-table-header-sub form input{
+
+.admin-main-table-header-sub form input {
     width: 330px;
     font-family: MontMedium;
     font-size: 12px;
@@ -4196,18 +4200,20 @@ footer p {
     box-shadow: 0 0 10px rgba(84, 109, 254, 0.5);
     outline: none;
 }
-.admin-main-table-header-sub form a{
+
+.admin-main-table-header-sub form a {
     text-decoration: none;
     color: #CAD2DD;
     position: absolute;
     top: 6px;
     right: 10px;
 }
-.admin-main-table-header-sub form a i{
+
+.admin-main-table-header-sub form a i {
     font-size: 14px;
 }
 
-.admin-main-table-header-button{
+.admin-main-table-header-button {
     text-decoration: none;
     padding: 10px 18px;
     background-color: #546dfe;
@@ -4220,14 +4226,17 @@ footer p {
     align-items: center;
     transition: 0.5s ease;
 }
-.admin-main-table-header-button:hover{
+
+.admin-main-table-header-button:hover {
     background-color: #546efed0;
     color: #fff;
 }
-.admin-main-table-header-button i{
+
+.admin-main-table-header-button i {
     font-size: 12px;
 }
-.admin-main-table-header-more-button{
+
+.admin-main-table-header-more-button {
     padding: 10px 15px;
     background-color: #EAEDFF;
     display: flex;
@@ -4238,10 +4247,183 @@ footer p {
     outline-color: #EAEDFF;
     border-color: #EAEDFF;
 }
-.admin-main-table-header-more-button i{
 
+.admin-main-table-header-more-button i {
+
+    font-size: 16px;
+    color: var(--text);
+}
+
+.admin-main-table-body {
+    width: 100%;
+    min-height: 100px;
+}
+
+.admin-main-table-body table {
+    width: 100%;
+}
+
+.admin-main-table-body table thead {
+    width: 100%;
+    border-bottom: 1px solid #e2e6f1;
+
+}
+
+.admin-main-table-body table thead tr th {
+    min-width: 20px;
+    padding: 15px;
+    font-family: MontMedium;
+    font-size: 16px;
+    color: var(--text);
+    white-space: nowrap;
+
+}
+
+
+.admin-main-table-body table thead tr .CheckInputThead {
+    display: none;
+}
+
+.admin-main-table-body table thead tr .CheckInputThead.active {
+    display: block;
+}
+
+.admin-main-table-body table thead tr .CheckInputThead input {
+    cursor: pointer;
+}
+
+
+.admin-main-table-body table tbody tr {
+    border-bottom: 1px solid #e2e6f1;
+    transition: 0.2s;
+}
+
+.admin-main-table-body table tbody tr:hover {
+    background-color: #e2e6f150;
+}
+
+.admin-main-table-body table tbody tr td {
+    min-width: 20px;
+    padding: 15px;
+    font-family: MontMedium;
+    font-size: 16px;
+    color: var(--text);
+    white-space: nowrap;
+
+}
+
+.admin-main-table-body table tbody tr .CheckInputTbody {
+    display: none;
+}
+
+.admin-main-table-body table tbody tr .CheckInputTbody.active {
+    display: block;
+}
+
+.admin-main-table-body table tbody tr .CheckInputTbody input {
+    cursor: pointer;
+}
+
+.admin-main-table-body table tbody tr td .table-name {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.admin-main-table-body table tbody tr td .table-name img {
+    width: 50px;
+    height: 50px;
+    border-radius: 7px;
+}
+
+.admin-main-table-body table tbody tr td .table-name a {
+    font-family: MontSemiBold;
+    text-decoration: none;
+    font-size: 16px;
+    color: var(--text);
+}
+
+.admin-main-table-body table tbody tr td .table-badge {
+    padding: 4px 15px;
+    border-radius: 5px;
+    font-family: MontSemiBold;
+    font-size: 12px;
+}
+
+.admin-main-table-body table tbody tr td .table-badge.table-success {
+    color: #0CD7B1;
+    background-color: #0cd7b23b;
+
+}
+
+.admin-main-table-body table tbody tr td .table-action {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.admin-main-table-body table tbody tr td .table-action .table-action-btn {
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background-color: rgb(var(--i), 0.25);
+    color: rgb(var(--i));
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.admin-main-table-body table tbody tr td .table-action .table-action-btn:hover {
+    background-color: rgb(var(--i));
+    color: #fff;
+}
+
+.admin-main-table-body table tbody tr td .table-action .table-action-btn i {
+    font-size: 16px;
+}
+
+.admin-main-table-footer {
+    width: 100%;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.admin-main-table-footer p {
+    font-family: MontSemiBold;
+    font-size: 14px;
+    color: #737B86;
+}
+
+.admin-main-table-footer p b {
+    font-family: MontSemiBold;
     font-size: 14px;
     color: var(--text);
+}
+
+.table-footer-pagination .pagination .page-item .page-link {
+    border-color: #e2e6f1;
+    font-family: MontRegular;
+    font-size: 14px;
+    color: var(--text);
+
+}
+.table-footer-pagination .pagination .page-item .page-link:hover{
+    color: #546dfe;
+
+}
+.table-footer-pagination .pagination .page-item .page-link:focus{
+    box-shadow: none;
+
+
+}
+.table-footer-pagination .pagination .page-item.active .page-link{
+    background-color: #546dfe;
+    color: #fff;
 }
 
 /************************************************************************************************************
