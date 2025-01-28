@@ -3,13 +3,13 @@
 @section('content')
     <div class="content">
         <div class="title mt-3">
-            <h1 class="mb-2">Create Category</h1>
+            <h1 class="mb-2">Update Category</h1>
             <span class="dashboard-span">
                 <a href="{{ route('Admin.dashboard.index') }}">Dashborads <i class="ml-2 fa-solid fa-angles-right"></i>
                 </a>
                 <a href="{{ route('Admin.category') }}">Category <i class="ml-2 fa-solid fa-angles-right"></i>
                 </a>
-                Create Category
+                Update Category
             </span>
         </div>
 
@@ -20,7 +20,7 @@
                         <div class="admin-main-form-left-container">
                             <div class="admin-main-form-left-card">
                                 <div class="admin-main-form-left-card-header">
-                                    <h3>Add Category</h3>
+                                    <h3>Update Category</h3>
                                     <a href="{{ route('Admin.category') }}">
                                         <i class="fa-solid fa-arrow-left"></i>
                                         <span>Go Back</span>
@@ -30,13 +30,13 @@
                                     <div class="admin-main-form-left-small-card">
                                         <h3>Category Name</h3>
                                         <input type="text" name="name" id="name" class="form-control"
-                                            placeholder="Category Name">
+                                            placeholder="Category Name" value="">
                                         <span class="admin-invalid-feedback"></span>
                                     </div>
                                     <div class="admin-main-form-left-small-card">
                                         <h3>Category Slug</h3>
                                         <input type="text" name="slug" id="slug" class="form-control"
-                                            placeholder="Category Slug">
+                                            placeholder="Category Slug" value="">
                                         <span class="admin-invalid-feedback"></span>
                                     </div>
                                     <div class="admin-main-left-large-card">
@@ -96,7 +96,7 @@
                         </div>
                     </div>
                     <div class="admin-main-form-bottom-container">
-                        <button type="submit">Add Category</button>
+                        <button type="submit">Update Category</button>
                     </div>
                 </form>
 
@@ -107,5 +107,5 @@
 @endsection
 
 @section('script')
-    <script src="{{ asset('Asset/Admin/js/Category/create.js') }}"></script>
+    <script src="{{ asset('Asset/Admin/js/Category/edit.js') }}"></script>
 @endsection

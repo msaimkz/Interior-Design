@@ -83,7 +83,7 @@
                                         <a href="" class="table-action-btn" style="--i: 84 , 109, 254;">
                                             <i class="fa-regular fa-eye"></i>
                                         </a>
-                                        <a href="" class="table-action-btn" style="--i: 12 , 215, 177;">
+                                        <a href="{{ route('Admin.category.edit') }}" class="table-action-btn" style="--i: 12 , 215, 177;">
                                             <i class="ri-edit-line"></i>
                                         </a>
                                         <a href="" class="table-action-btn" style="--i: 254 ,84, 84;">
