@@ -21,7 +21,7 @@
                                 <i class="fa-solid fa-magnifying-glass"></i>
                             </a>
                         </form>
-                        <a href="" class="admin-main-table-header-button">
+                        <a href="{{ route('Admin.category.create') }}" class="admin-main-table-header-button">
                             <i class="fa-solid fa-circle-plus"></i>
                             <span>Add Category</span>
                         </a>

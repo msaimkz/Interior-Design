@@ -50,6 +50,7 @@ Route::get('/Admin/Dashboard/Support',[AdminSupportController::class,'index'])->
 
 // Admin Category Routes
 Route::get('/Admin/Dashboard/All-Categories',[CategoryController::class,'index'])->name('Admin.category');
+Route::get('/Admin/Dashboard/Create-Category',[CategoryController::class,'create'])->name('Admin.category.create');
 
 
 

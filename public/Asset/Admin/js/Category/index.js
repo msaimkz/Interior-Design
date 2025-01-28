@@ -93,6 +93,7 @@ function selectMultipleCheck() {
             if (anyChecked) {
                 DropDeleteBtn.classList.add("delActive");
             } else {
+                MainCheckBox.checked = false;
                 DropDeleteBtn.classList.remove("delActive");
             }
         });
