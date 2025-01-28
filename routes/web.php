@@ -6,6 +6,7 @@ use App\Http\Controllers\Admin\AdminProfileController;
 use App\Http\Controllers\Admin\AdminSettingController;
 use App\Http\Controllers\Admin\AdminSupportController;
 use App\Http\Controllers\Admin\CategoryController;
+use App\Http\Controllers\Admin\SubCategoryController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -53,5 +54,12 @@ Route::get('/Admin/Dashboard/All-Categories',[CategoryController::class,'index']
 Route::get('/Admin/Dashboard/Create-Category',[CategoryController::class,'create'])->name('Admin.category.create');
 Route::get('/Admin/Dashboard/Edit-Category',[CategoryController::class,'edit'])->name('Admin.category.edit');
 
+
+
+
+// Admin Sub-Category Routes
+Route::get('/Admin/Dashboard/All-Sub-Categories',[SubCategoryController::class,'index'])->name('Admin.Subcategory');
+Route::get('/Admin/Dashboard/Create-Sub-Category',[SubCategoryController::class,'create'])->name('Admin.Subcategory.create');
+Route::get('/Admin/Dashboard/Edit-Sub-Category',[SubCategoryController::class,'edit'])->name('Admin.Subcategory.edit');
 
 
