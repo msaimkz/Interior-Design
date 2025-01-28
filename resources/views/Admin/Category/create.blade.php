@@ -25,6 +25,43 @@
                             <span>Go Back</span>
                         </a>
                     </div>
+                    <div class="admin-main-form-left-card-body">
+                        <div class="admin-main-form-left-small-card">
+                            <h3>Category Name</h3>
+                            <input type="text" name="name" id="name" class="form-control" placeholder="Category Name">
+                            <span class="admin-invalid-feedback"></span>
+                        </div>
+                        <div class="admin-main-form-left-small-card">
+                            <h3>Category Slug</h3>
+                            <input type="text" name="slug" id="slug" class="form-control" placeholder="Category Slug">
+                            <span class="admin-invalid-feedback"></span>
+                        </div>
+                        <div class="admin-main-left-large-card">
+                            <h3>Status</h3>
+                            <select  hidden name="status" id="status">
+                                <option value="active">Active</option>
+                                <option value="block">Block</option>
+                            </select>
+                            <div class="admin-form-select" id="status">
+                               <div class="selected-option">
+                                  <span data-value="active">Active</span>
+                                  <i class="fa-solid fa-sort-down"></i>
+                               </div>
+                               <ul class="select-options">
+                                  <li data-value="active">Active</li>
+                                  <li data-value="block">Block</li>
+                               </ul>
+
+                            </div>
+                            <span class="admin-invalid-feedback"></span>
+                        </div>
+                        <div class="admin-main-left-large-card">
+                            <h3>Desscription</h3>
+                            <textarea name="desscription" id="desscription" cols="10" rows="6"></textarea>
+                            <span class="admin-invalid-feedback"></span>
+                        </div>
+
+                    </div>
 
                 </div>
             </div>
@@ -32,5 +69,11 @@
         </div>
     </div>
 </div>
+    
+@endsection
+
+@section('script')
+
+<script src="{{ asset('Asset/Admin/js/Category/create.js') }}"></script>
     
 @endsection
