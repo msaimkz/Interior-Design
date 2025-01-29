@@ -53,6 +53,7 @@ Route::get('/Admin/Dashboard/Support',[AdminSupportController::class,'index'])->
 Route::get('/Admin/Dashboard/All-Categories',[CategoryController::class,'index'])->name('Admin.category');
 Route::get('/Admin/Dashboard/Create-Category',[CategoryController::class,'create'])->name('Admin.category.create');
 Route::get('/Admin/Dashboard/Edit-Category',[CategoryController::class,'edit'])->name('Admin.category.edit');
+Route::get('/Admin/Dashboard/Category-Detail',[CategoryController::class,'show'])->name('Admin.category.show');
 
 
 
