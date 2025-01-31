@@ -7,6 +7,7 @@ use App\Http\Controllers\Admin\AdminSettingController;
 use App\Http\Controllers\Admin\AdminSupportController;
 use App\Http\Controllers\Admin\BrandController;
 use App\Http\Controllers\Admin\CategoryController;
+use App\Http\Controllers\Admin\ShapeController;
 use App\Http\Controllers\Admin\SubCategoryController;
 use Illuminate\Support\Facades\Route;
 
@@ -72,3 +73,9 @@ Route::get('/Admin/Dashboard/Create-Brand',[BrandController::class,'create'])->n
 Route::get('/Admin/Dashboard/Edit-Brand',[BrandController::class,'edit'])->name('Admin.brand.edit');
 Route::get('/Admin/Dashboard/Brand-Detail',[BrandController::class,'show'])->name('Admin.brand.show');
 
+
+
+// Admin Shape Routes
+Route::get('/Admin/Dashboard/All-Shapes',[ShapeController::class,'index'])->name('Admin.shape');
+Route::get('/Admin/Dashboard/Create-Shape',[ShapeController::class,'create'])->name('Admin.shape.create');
+Route::get('/Admin/Dashboard/Edit-Shape',[ShapeController::class,'edit'])->name('Admin.shape.edit');
