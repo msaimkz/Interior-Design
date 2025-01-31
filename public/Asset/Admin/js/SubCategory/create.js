@@ -31,3 +31,13 @@ function  Select() {
     
 }
 Select();
+
+function SummerNote() {
+
+    $(document).ready(function () {
+        $('.summernote').summernote({
+            height: 250,
+        })
+    })
+}
+SummerNote()

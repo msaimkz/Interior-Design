@@ -5,6 +5,7 @@ use App\Http\Controllers\Admin\AdminMailController;
 use App\Http\Controllers\Admin\AdminProfileController;
 use App\Http\Controllers\Admin\AdminSettingController;
 use App\Http\Controllers\Admin\AdminSupportController;
+use App\Http\Controllers\Admin\BrandController;
 use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\Admin\SubCategoryController;
 use Illuminate\Support\Facades\Route;
@@ -62,5 +63,12 @@ Route::get('/Admin/Dashboard/Category-Detail',[CategoryController::class,'show']
 Route::get('/Admin/Dashboard/All-Sub-Categories',[SubCategoryController::class,'index'])->name('Admin.Subcategory');
 Route::get('/Admin/Dashboard/Create-Sub-Category',[SubCategoryController::class,'create'])->name('Admin.Subcategory.create');
 Route::get('/Admin/Dashboard/Edit-Sub-Category',[SubCategoryController::class,'edit'])->name('Admin.Subcategory.edit');
+Route::get('/Admin/Dashboard/Sub-Category-Detail',[SubCategoryController::class,'show'])->name('Admin.Subcategory.show');
 
+
+// Admin Brand Routes
+Route::get('/Admin/Dashboard/All-Brands',[BrandController::class,'index'])->name('Admin.brand');
+Route::get('/Admin/Dashboard/Create-Brand',[BrandController::class,'create'])->name('Admin.brand.create');
+Route::get('/Admin/Dashboard/Edit-Brand',[BrandController::class,'edit'])->name('Admin.brand.edit');
+Route::get('/Admin/Dashboard/Brand-Detail',[BrandController::class,'show'])->name('Admin.brand.show');
 

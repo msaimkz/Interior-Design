@@ -1,5 +1,9 @@
 @extends('Admin.Layout.master')
 
+@section('css')
+    <link rel="stylesheet" href="{{ asset('Asset/Admin/plugins/summernote/summernote.min.css') }}">
+@endsection
+
 @section('content')
     <div class="content">
         <div class="title mt-3">
@@ -59,7 +63,7 @@
                                     </div>
                                     <div class="admin-main-left-large-card">
                                         <h3>Desscription</h3>
-                                        <textarea name="desscription" id="desscription" cols="10" rows="6"></textarea>
+                                        <textarea name="desscription" class="summernote" id="desscription" cols="10" rows="6"></textarea>
                                         <span class="admin-invalid-feedback"></span>
                                     </div>
 
@@ -107,5 +111,6 @@
 @endsection
 
 @section('script')
+    <script src="{{ asset('Asset/Admin/plugins/summernote/summernote.min.js') }}"></script>
     <script src="{{ asset('Asset/Admin/js/Category/create.js') }}"></script>
 @endsection

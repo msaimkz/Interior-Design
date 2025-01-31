@@ -102,7 +102,7 @@
 
                 </li>
                 <li class="link-contain">
-                    <a href="#">
+                    <a href="{{ route('Admin.brand') }}">
                         <span class="link-icon"><i class="fa-solid fa-layer-group"></i></span>
                         <span class="link-text">Brand</span>
                     </a>

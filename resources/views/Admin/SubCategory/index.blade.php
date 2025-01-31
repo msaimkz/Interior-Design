@@ -118,7 +118,7 @@
                                 </td>
                                 <td>
                                     <div class="table-action">
-                                        <a href="" class="table-action-btn" style="--i: 84 , 109, 254;">
+                                        <a href="{{ route('Admin.Subcategory.show') }}" class="table-action-btn" style="--i: 84 , 109, 254;">
                                             <i class="fa-regular fa-eye"></i>
                                         </a>
                                         <a href="" class="table-action-btn" style="--i: 12 , 215, 177;">
